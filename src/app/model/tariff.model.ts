@@ -1,11 +1,10 @@
-type onlyTrue = true
+import { iChannel , iTariff } from "./types";
 
-interface iBroadcastFormat {
-    analog ?: onlyTrue ,
-    digital ?: onlyTrue
-}
+class SocialTariff implements iTariff {
 
-export interface iTariff {
-    social ?: iBroadcastFormat ,
-    basic ?: iBroadcastFormat
+    name = 'Социальный' ;
+    analog = [
+        
+    ]
+
 }

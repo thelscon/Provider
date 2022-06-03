@@ -6,9 +6,9 @@ import { ChannelData } from "./channel.data";
 @Injectable ()
 export class ChannelRepository {
 
-    private _channels : Channel [] = []
+    private _channels : Channel []
 
-    constructor ( private _channelData : ChannelData ) {
+    constructor ( _channelData : ChannelData ) {
 
         this._channels = _channelData.channels ;
 

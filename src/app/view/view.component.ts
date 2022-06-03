@@ -1,5 +1,6 @@
 import { Component } from "@angular/core";
 
+import { iTariff } from "../model/tariff.model";
 import { Channel } from "../model/channel.model";
 import { ChannelRepository } from "../model/channel.repository";
 
@@ -10,10 +11,10 @@ import { ChannelRepository } from "../model/channel.repository";
 })
 export class ViewComponent {
 
-    constructor ( private _channels : ChannelRepository ) {}
+    constructor ( private _channelRepository : ChannelRepository ) {}
 
     get channels () : Channel [] {
-        return this._channels.channels
+        return this._channelRepository.channels
     }
 
 }
