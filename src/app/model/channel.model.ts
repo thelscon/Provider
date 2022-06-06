@@ -1,5 +1,6 @@
 import { iChannel , iBroadcastFormat } from "./types";
 
+
 export class Channel implements iChannel {
     
     broadcastFormat: iBroadcastFormat = {} ;
@@ -15,3 +16,5 @@ export class Channel implements iChannel {
 
     }
 }
+
+// const InterTVChannel : iChannel = new Inter () ;
