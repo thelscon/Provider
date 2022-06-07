@@ -194,7 +194,7 @@ export class OTSE implements iChannel {
     
 }
 
-export class  Odyn_plyus_odyn implements iChannel {
+export class Odyn_plyus_odyn implements iChannel {
 
     name = '1+1' ;
     broadcastFormat = {
@@ -495,11 +495,10 @@ export class Trofey implements iChannel {
     
 }
 
-export class Four_Ever_Cinema implements iChannel {
+export class Fourever_Music implements iChannel {
 
-    name = 'Four Ever Cinema' ;
+    name = '4ever Music' ;
     broadcastFormat = {
-        analog : true ,
         digital : true
     }
     
@@ -1088,6 +1087,582 @@ export class Travel_TV implements iChannel {
 
     name = 'Travel TV' ;
     broadcastFormat = {
+        digital : true
+    }
+    
+}
+
+export class Deluxe_Lounge implements iChannel {
+
+    name = 'Deluxe Lounge' ;
+    broadcastFormat = {
+        digital : true
+    }
+    
+}
+
+export class Wness_TV implements iChannel {
+
+    name = 'Wness TV' ;
+    broadcastFormat = {
+        digital : true
+    }
+    
+}
+
+export class Deluxe_Music implements iChannel {
+
+    name = 'Deluxe Music' ;
+    broadcastFormat = {
+        digital : true
+    }
+    
+}
+
+export class Rock_TV implements iChannel {
+
+    name = 'Rock TV' ;
+    broadcastFormat = {
+        digital : true
+    }
+    
+}
+
+export class Jukebox implements iChannel {
+
+    name = 'Jukebox' ;
+    broadcastFormat = {
+        digital : true
+    }
+    
+}
+
+export class Mason_TV implements iChannel {
+
+    name = 'Масон ТВ' ;
+    broadcastFormat = {
+        digital : true
+    }
+    
+}
+
+export class TravelAdventure implements iChannel {
+
+    name = 'Travel&Adventure' ;
+    broadcastFormat = {
+        digital : true
+    }
+    
+}
+
+export class Kino_1 implements iChannel {
+
+    name = 'Кино 1' ;
+    broadcastFormat = {
+        analog : true ,
+        digital : true
+    }
+    
+}
+
+export class History_HD implements iChannel {
+
+    name = 'History HD' ;
+    broadcastFormat = {
+        analog : true ,
+        digital : true
+    }
+    
+}
+
+export class Travel_HD implements iChannel {
+
+    name = 'Travel HD' ;
+    broadcastFormat = {
+        analog : true ,
+        digital : true
+    }
+    
+}
+
+export class Viasat_History implements iChannel {
+
+    name = 'Viasat History' ;
+    broadcastFormat = {
+        digital : true
+    }
+    
+}
+
+export class Viasat_Explorer implements iChannel {
+
+    name = 'Viasat Explorer' ;
+    broadcastFormat = {
+        digital : true
+    }
+    
+}
+
+export class Viasat_Nature implements iChannel {
+
+    name = 'Viasat Nature' ;
+    broadcastFormat = {
+        digital : true
+    }
+    
+}
+
+export class Black implements iChannel {
+
+    name = 'Black' ;
+    broadcastFormat = {
+        digital : true
+    }
+    
+}
+
+export class EU_Music implements iChannel {
+
+    name = 'EU Music' ;
+    broadcastFormat = {
+        analog : true ,
+        digital : true
+    }
+    
+}
+
+export class DuckTV implements iChannel {
+
+    name = 'DuckTV+' ;
+    broadcastFormat = {
+        digital : true
+    }
+    
+}
+
+export class Duck_TV implements iChannel {
+
+    name = 'Duck TV' ;
+    broadcastFormat = {
+        digital : true
+    }
+    
+}
+
+export class TiJi implements iChannel {
+
+    name = 'TiJi' ;
+    broadcastFormat = {
+        digital : true
+    }
+    
+}
+
+export class Boomerang implements iChannel {
+
+    name = 'Boomerang' ;
+    broadcastFormat = {
+        digital : true
+    }
+    
+}
+
+export class FlixSnip implements iChannel {
+
+    name = 'Flix&Snip' ;
+    broadcastFormat = {
+        analog : true ,
+        digital : true
+    }
+    
+}
+
+export class Malyatko_TV implements iChannel {
+
+    name = 'Малятко TV' ;
+    broadcastFormat = {
+        digital : true
+    }
+    
+}
+
+export class Cartoon_Network implements iChannel {
+
+    name = 'Cartoon Network' ;
+    broadcastFormat = {
+        analog : true ,
+        digital : true
+    }
+    
+}
+
+export class Lale implements iChannel {
+
+    name = 'Lâle' ;
+    broadcastFormat = {
+        digital : true
+    }
+    
+}
+
+export class Mezzo implements iChannel {
+
+    name = 'Mezzo' ;
+    broadcastFormat = {
+        digital : true
+    }
+    
+}
+
+export class NIKI_Kids implements iChannel {
+
+    name = 'NIKI Kids' ;
+    broadcastFormat = {
+        analog : true ,
+        digital : true
+    }
+    
+}
+
+export class NIKI_Junior implements iChannel {
+
+    name = 'NIKI Junior' ;
+    broadcastFormat = {
+        analog : true ,
+        digital : true
+    }
+    
+}
+
+export class Suspilne_Donbas implements iChannel {
+
+    name = 'Суспільне Донбас' ;
+    broadcastFormat = {
+        digital : true
+    }
+    
+}
+
+export class Sport1 implements iChannel {
+
+    name = 'Sport1' ;
+    broadcastFormat = {
+        digital : true
+    }
+    
+}
+
+export class Sport2 implements iChannel {
+
+    name = 'Sport2' ;
+    broadcastFormat = {
+        digital : true
+    }
+    
+}
+
+export class Setanta_Sports implements iChannel {
+
+    name = 'Setanta Sports' ;
+    broadcastFormat = {
+        analog : true ,
+        digital : true
+    }
+    
+}
+
+export class Viasat_Sport implements iChannel {
+
+    name = 'Viasat Sport' ;
+    broadcastFormat = {
+        digital : true
+    }
+    
+}
+
+export class Sport1_Baltic implements iChannel {
+
+    name = 'Sport1 Baltic' ;
+    broadcastFormat = {
+        digital : true
+    }
+    
+}
+
+export class Sport2_Baltic implements iChannel {
+
+    name = 'Sport2 Baltic' ;
+    broadcastFormat = {
+        digital : true
+    }
+    
+}
+
+export class Sport1_HD implements iChannel {
+
+    name = 'Sport1 HD' ;
+    broadcastFormat = {
+        digital : true
+    }
+    
+}
+
+export class FastFun_Box implements iChannel {
+
+    name = 'Fast&Fun Box' ;
+    broadcastFormat = {
+        digital : true
+    }
+    
+}
+
+export class DocuBox implements iChannel {
+
+    name = 'DocuBox' ;
+    broadcastFormat = {
+        analog : true ,
+        digital : true
+    }
+    
+}
+
+export class Trace_Sport_HD implements iChannel {
+
+    name = 'Trace Sport HD' ;
+    broadcastFormat = {
+        digital : true
+    }
+    
+}
+
+export class FilmBox_ArtHouse implements iChannel {
+
+    name = 'FilmBox ArtHouse' ;
+    broadcastFormat = {
+        analog : true ,
+        digital : true
+    }
+    
+}
+
+export class FilmBox implements iChannel {
+
+    name = 'FilmBox' ;
+    broadcastFormat = {
+        analog : true ,
+        digital : true
+    }
+    
+}
+
+export class FashionBox implements iChannel {
+
+    name = 'FashionBox' ;
+    broadcastFormat = {
+        digital : true
+    }
+    
+}
+
+export class TuneBox implements iChannel {
+
+    name = '360TuneBox' ;
+    broadcastFormat = {
+        analog : true ,
+        digital : true
+    }
+    
+}
+
+export class FightBox implements iChannel {
+
+    name = 'FightBox' ;
+    broadcastFormat = {
+        digital : true
+    }
+    
+}
+
+export class Nautical_Channel implements iChannel {
+
+    name = 'Nautical Channel' ;
+    broadcastFormat = {
+        digital : true
+    }
+    
+}
+
+export class SEA_TV implements iChannel {
+
+    name = 'SEA TV' ;
+    broadcastFormat = {
+        analog : true ,
+        digital : true
+    }
+    
+}
+
+export class VIP_Premiere implements iChannel {
+
+    name = 'VIP Premiere' ;
+    broadcastFormat = {
+        digital : true
+    }
+    
+}
+
+export class VIP_Megahit implements iChannel {
+
+    name = 'VIP Megahit' ;
+    broadcastFormat = {
+        digital : true
+    }
+    
+}
+
+export class VIP_Comedy implements iChannel {
+
+    name = 'VIP Comedy' ;
+    broadcastFormat = {
+        digital : true
+    }
+    
+}
+
+export class TV1000_East implements iChannel {
+
+    name = 'TV1000 East' ;
+    broadcastFormat = {
+        digital : true
+    }
+    
+}
+
+export class TV1000_Action_East implements iChannel {
+
+    name = 'TV1000 Action East' ;
+    broadcastFormat = {
+        digital : true
+    }
+    
+}
+
+export class TV1000_World_Kino implements iChannel {
+
+    name = 'TV1000 World Kino' ;
+    broadcastFormat = {
+        analog : true ,
+        digital : true
+    }
+    
+}
+
+export class TV1 implements iChannel {
+
+    name = 'ТВ-1' ;
+    broadcastFormat = {
+        digital : true
+    }
+    
+}
+
+export class Epic_Drama implements iChannel {
+
+    name = 'Epic Drama' ;
+    broadcastFormat = {
+        digital : true
+    }
+    
+}
+
+export class Trace_Urban implements iChannel {
+
+    name = 'Trace Urban' ;
+    broadcastFormat = {
+        digital : true
+    }
+    
+}
+
+export class Four_Ever_Cinema implements iChannel {
+
+    name = 'Four Ever Cinema' ;
+    broadcastFormat = {
+        analog : true ,
+        digital : true
+    }
+    
+}
+
+export class Dorama implements iChannel {
+
+    name = 'Дорама' ;
+    broadcastFormat = {
+        digital : true
+    }
+    
+}
+
+export class AMC implements iChannel {
+
+    name = 'AMC' ;
+    broadcastFormat = {
+        analog : true ,
+        digital : true
+    }
+    
+}
+
+export class KinoKazka implements iChannel {
+
+    name = 'КіноКазка' ;
+    broadcastFormat = {
+        digital : true
+    }
+    
+}
+
+export class Bollywood implements iChannel {
+
+    name = 'Bollywood' ;
+    broadcastFormat = {
+        digital : true
+    }
+    
+}
+
+export class QuizTV implements iChannel {
+
+    name = 'Quiz TV' ;
+    broadcastFormat = {
+        digital : true
+    }
+    
+}
+
+export class Ukrainian_Fashion_TV implements iChannel {
+
+    name = 'Ukrainian Fashion TV' ;
+    broadcastFormat = {
+        digital : true
+    }
+    
+}
+
+export class ReserveA implements iChannel {
+
+    name = 'Резерв, аналогове мовлення' ;
+    broadcastFormat = {
+        analog : true 
+    }
+    
+}
+
+export class ReserveAG implements iChannel {
+
+    name = 'Резерв, аналогове і цифрове мовлення' ;
+    broadcastFormat = {
+        analog : true ,
         digital : true
     }
     

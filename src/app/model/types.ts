@@ -5,11 +5,12 @@ export interface iBroadcastFormat {
 
 export interface iChannel {
     name : string ,
-    broadcastFormat : iBroadcastFormat
+    broadcastFormat ?: iBroadcastFormat
 }
 
+type tBroadcastType < P extends keyof iBroadcastFormat > = Pick < iBroadcastFormat , P > ;
 export interface iTariff {
     name : string ,
-    social ?: iChannel [] ,
-    basic ?: iChannel []
+    analogChannels : tBroadcastType < 'analog' > [] ,
+    digitalChannels : tBroadcastType < 'digital' > [] 
 }
