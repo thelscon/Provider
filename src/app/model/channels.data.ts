@@ -21,7 +21,7 @@ export class ChannelsData {
     ICTV = new TVChannels.ICTV () ;
     Novyy_kanal = new TVChannels.Novyy_kanal () ;
     М1 = new TVChannels.М1 () ;
-    М2 = new TVChannels.М2 () ;
+    M2 = new TVChannels.M2 () ;
     OTSE = new TVChannels.OTSE () ;
     Odyn_plyus_odyn = new TVChannels.Odyn_plyus_odyn () ;
     Dva_plyus_dva = new TVChannels.Dva_plyus_dva () ;
@@ -45,6 +45,7 @@ export class ChannelsData {
     Moya_Odessa = new TVChannels.Moya_Odessa () ;
     PLUS = new TVChannels.PLUS () ;
     Hlas = new TVChannels.Hlas () ;
+    Hrad = new TVChannels.Hrad () ;
     IT3 = new TVChannels.IT3 () ;
     Odessa_Fashion = new TVChannels.Odessa_Fashion () ;
     UA_ODESA = new TVChannels.UA_ODESA () ;

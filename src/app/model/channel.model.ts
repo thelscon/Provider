@@ -1,9 +1,8 @@
-import { iBroadcastFormat , iChannel } from "./types";
+import { eFormatType } from "./types";
+import { iChannel } from "./types";
 
 
-export class Channel  implements iChannel {
-
-    broadcastFormat: iBroadcastFormat = {};
+export class Channel < K extends eFormatType > implements iChannel < K > {
 
     constructor ( 
         public name : string ) {}

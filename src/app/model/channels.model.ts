@@ -1,90 +1,40 @@
 import { iChannel } from "./types";
+import { eFormatType } from "./types";
 
-export class Inter implements iChannel {
-
+export class Inter implements iChannel < eFormatType.AnalogDigital >  {
     name = 'Інтер' ;
-    broadcastFormat = {
-        analog : true ,
-        digital : true
-    }
-    
 }
 
-export class NTN implements iChannel {
-
+export class NTN implements iChannel < eFormatType.AnalogDigital >  {
     name = 'НТН' ;
-    broadcastFormat = {
-        analog : true ,
-        digital : true
-    }
-    
 }
 
-export class Zoom implements iChannel {
-
+export class Zoom implements iChannel < eFormatType.Digital > {
     name = 'Zoom' ;
-    broadcastFormat = {
-        digital : true
-    }
-    
 }
 
-export class Piksel implements iChannel {
-
+export class Piksel implements iChannel < eFormatType.AnalogDigital > {
     name = 'Піксель' ;
-    broadcastFormat = {
-        analog : true ,
-        digital : true
-    }
-    
 }
 
-export class Enter_film implements iChannel {
-
+export class Enter_film implements iChannel < eFormatType.AnalogDigital >  {
     name = 'Enter-фільм' ;
-    broadcastFormat = {
-        analog : true ,
-        digital : true
-    }
-    
 }
 
-export class Meha implements iChannel {
-
+export class Meha implements iChannel < eFormatType.AnalogDigital > {
     name = 'Мега' ;
-    broadcastFormat = {
-        analog : true ,
-        digital : true
-    }
-    
 }
 
-export class K1 implements iChannel {
-
+export class K1 implements iChannel < eFormatType.AnalogDigital > {
     name = 'К1' ;
-    broadcastFormat = {
-        analog : true ,
-        digital : true
-    }
-    
 }
 
-export class K2 implements iChannel {
-
+export class K2 implements iChannel < eFormatType.Digital > {
     name = 'К2' ;
-    broadcastFormat = {
-        digital : true
-    }
-    
 }
 
-export class Bolt implements iChannel {
-
+export class Bolt implements iChannel < eFormatType.Digital > {
     name = 'Bolt' ;
-    broadcastFormat = {
-        digital : true
-    }
-    
 }
 
 export class Kvartal_TV implements iChannel {
@@ -174,14 +124,8 @@ export class М1 implements iChannel {
     
 }
 
-export class М2 implements iChannel {
-
+export class M2 implements iChannel < 'analog digital' > {
     name = 'M2' ;
-    broadcastFormat = {
-        analog : true ,
-        digital : true
-    }
-    
 }
 
 export class OTSE implements iChannel {
@@ -402,6 +346,16 @@ export class PLUS implements iChannel {
 export class Hlas implements iChannel {
 
     name = 'Глас' ;
+    broadcastFormat = {
+        analog : true ,
+        digital : true
+    }
+    
+}
+
+export class Hrad implements iChannel {
+
+    name = 'Град' ;
     broadcastFormat = {
         analog : true ,
         digital : true
