@@ -1,5 +1,4 @@
-import { iChannel } from "./types";
-import { iTariff } from "./types";
+import { iTariff } from "./tariff.model";
 import { ChannelsData } from "./channels.data";
 
 let Channels = new ChannelsData () ;

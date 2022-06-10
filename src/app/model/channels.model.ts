@@ -1,4 +1,4 @@
-import { iChannel } from "./types";
+import { iChannel } from "./channel.model";
 import { eFormatType } from "./types";
 
 export class Inter implements iChannel < eFormatType.AnalogDigital >  {
@@ -37,1587 +37,678 @@ export class Bolt implements iChannel < eFormatType.Digital > {
     name = 'Bolt' ;
 }
 
-export class Kvartal_TV implements iChannel {
-
+export class Kvartal_TV implements iChannel < eFormatType.Digital > {
     name = 'Квартал TV' ;
-    broadcastFormat = {
-        digital : true
-    }
-    
 }
 
-export class TRK_Ukrayina implements iChannel {
-
+export class TRK_Ukrayina implements iChannel < eFormatType.AnalogDigital > {
     name = 'ТРК Україна' ;
-    broadcastFormat = {
-        analog : true ,
-        digital : true
-    }
-    
 }
 
-export class NLO_TV implements iChannel {
-
+export class NLO_TV implements iChannel < eFormatType.AnalogDigital > {
     name = 'НЛО TV' ;
-    broadcastFormat = {
-        analog : true ,
-        digital : true
-    }
-    
 }
 
-export class Indyho_TV implements iChannel {
-
+export class Indyho_TV implements iChannel < eFormatType.Digital >  {
     name = 'Індиго TV' ;
-    broadcastFormat = {
-        digital : true
-    }
-    
 }
 
-export class Ukrayina_24 implements iChannel {
-
+export class Ukrayina_24 implements iChannel < eFormatType.AnalogDigital > {
     name = 'Україна 24' ;
-    broadcastFormat = {
-        analog : true ,
-        digital : true
-    }
-    
 }
 
-export class STB implements iChannel {
-
+export class STB implements iChannel < eFormatType.AnalogDigital > {
     name = 'СТБ' ;
-    broadcastFormat = {
-        analog : true ,
-        digital : true
-    }
-    
 }
 
-export class ICTV implements iChannel {
-
+export class ICTV implements iChannel < eFormatType.AnalogDigital > {
     name = 'ICTV' ;
-    broadcastFormat = {
-        analog : true ,
-        digital : true
-    }
-    
 }
 
-export class Novyy_kanal implements iChannel {
-
+export class Novyy_kanal implements iChannel < eFormatType.AnalogDigital > {
     name = 'Новий канал' ;
-    broadcastFormat = {
-        analog : true ,
-        digital : true
-    }
-    
 }
 
-export class М1 implements iChannel {
-
+export class М1 implements iChannel < eFormatType.Digital >  {
     name = 'M1' ;
-    broadcastFormat = {
-        digital : true
-    }
-    
 }
 
-export class M2 implements iChannel < 'analog digital' > {
+export class M2 implements iChannel < eFormatType.AnalogDigital > {
     name = 'M2' ;
 }
 
-export class OTSE implements iChannel {
-
+export class OTSE implements iChannel < eFormatType.AnalogDigital > {
     name = 'ОЦЕ' ;
-    broadcastFormat = {
-        analog : true ,
-        digital : true
-    }
-    
 }
 
-export class Odyn_plyus_odyn implements iChannel {
-
+export class Odyn_plyus_odyn implements iChannel < eFormatType.AnalogDigital > {
     name = '1+1' ;
-    broadcastFormat = {
-        analog : true ,
-        digital : true
-    }
-    
 }
 
-export class Dva_plyus_dva implements iChannel {
-
+export class Dva_plyus_dva implements iChannel < eFormatType.AnalogDigital >  {
     name = '2+2' ;
-    broadcastFormat = {
-        analog : true ,
-        digital : true
-    }
-    
 }
 
-export class TET implements iChannel {
-
+export class TET implements iChannel < eFormatType.AnalogDigital >  {
     name = 'ТЕТ' ;
-    broadcastFormat = {
-        analog : true ,
-        digital : true
-    }
-    
 }
 
-export class FILMUADrama implements iChannel {
-
+export class FILMUADrama implements iChannel < eFormatType.Digital > {
     name = 'FILMUADrama' ;
-    broadcastFormat = {
-        digital : true
-    }
-    
 }
 
-export class Paramount_Comedy implements iChannel {
-
+export class Paramount_Comedy implements iChannel < eFormatType.AnalogDigital > {
     name = 'Paramount Comedy' ;
-    broadcastFormat = {
-        analog : true ,
-        digital : true
-    }
-    
 }
 
-export class UNIAN implements iChannel {
-
+export class UNIAN implements iChannel < eFormatType.AnalogDigital>  {
     name = 'УНІАН' ;
-    broadcastFormat = {
-        analog : true ,
-        digital : true
-    }
-    
 }
 
-export class PlusPlus implements iChannel {
-
+export class PlusPlus implements iChannel < eFormatType.AnalogDigital >  {
     name = 'ПлюсПлюс' ;
-    broadcastFormat = {
-        analog : true ,
-        digital : true
-    }
-    
 }
 
-export class Bihudi implements iChannel {
-
+export class Bihudi implements iChannel < eFormatType.AnalogDigital >  {
     name = 'Бігуді' ;
-    broadcastFormat = {
-        analog : true ,
-        digital : true
-    }
-    
 }
 
-export class Somyy_kanal implements iChannel {
-
+export class Somyy_kanal implements iChannel < eFormatType.AnalogDigital >  {
     name = '7 канал' ;
-    broadcastFormat = {
-        analog : true ,
-        digital : true
-    }
-    
 }
 
-export class Dumskaya_TV implements iChannel {
-
+export class Dumskaya_TV implements iChannel < eFormatType.AnalogDigital >  {
     name = 'Думская.TV' ;
-    broadcastFormat = {
-        analog : true ,
-        digital : true
-    }
-    
 }
 
-export class Pervyy_gorodskoy implements iChannel {
-
+export class Pervyy_gorodskoy implements iChannel < eFormatType.AnalogDigital > {
     name = 'Первый городской' ;
-    broadcastFormat = {
-        analog : true ,
-        digital : true
-    }
-    
 }
 
-export class Tretiy_tsifrovoy implements iChannel {
-
+export class Tretiy_tsifrovoy implements iChannel < eFormatType.AnalogDigital > {
     name = 'Третий цифровой' ;
-    broadcastFormat = {
-        analog : true ,
-        digital : true
-    }
-    
 }
 
-export class Media_Inform implements iChannel {
-
+export class Media_Inform implements iChannel < eFormatType.AnalogDigital > {
     name = 'Медиа Информ' ;
-    broadcastFormat = {
-        analog : true ,
-        digital : true
-    }
-    
 }
 
-export class Tsentralnyy implements iChannel {
-
+export class Tsentralnyy implements iChannel < eFormatType.Digital > {
     name = 'Центральный' ;
-    broadcastFormat = {
-        digital : true
-    }
-    
 }
 
-export class Zoryanyy implements iChannel {
-
+export class Zoryanyy implements iChannel < eFormatType.Digital > {
     name = 'Зоряний' ;
-    broadcastFormat = {
-        digital : true
-    }
-    
 }
 
-export class Odesa_live implements iChannel {
-
+export class Odesa_live implements iChannel < eFormatType.AnalogDigital > {
     name = 'Odesa.live' ;
-    broadcastFormat = {
-        analog : true ,
-        digital : true
-    }
-    
 }
 
-export class Apostrof_TV implements iChannel {
-
+export class Apostrof_TV implements iChannel < eFormatType.Digital > {
     name = 'Апостроф TV' ;
-    broadcastFormat = {
-        digital : true
-    }
-    
 }
 
-export class Kruh implements iChannel {
-
+export class Kruh implements iChannel < eFormatType.AnalogDigital > {
     name = 'Круг' ;
-    broadcastFormat = {
-        analog : true ,
-        digital : true
-    }
-    
 }
 
-export class Reporter implements iChannel {
-
+export class Reporter implements iChannel < eFormatType.AnalogDigital > {
     name = 'Репортер' ;
-    broadcastFormat = {
-        analog : true ,
-        digital : true
-    }
-    
 }
 
-export class Moya_Odessa implements iChannel {
-
+export class Moya_Odessa implements iChannel < eFormatType.Digital > {
     name = 'Моя Одесса' ;
-    broadcastFormat = {
-        digital : true
-    }
-    
 }
 
-export class PLUS implements iChannel {
-
+export class PLUS implements iChannel < eFormatType.AnalogDigital > {
     name = 'PLUS' ;
-    broadcastFormat = {
-        analog : true ,
-        digital : true
-    }
-    
 }
 
-export class Hlas implements iChannel {
-
+export class Hlas implements iChannel < eFormatType.AnalogDigital > {
     name = 'Глас' ;
-    broadcastFormat = {
-        analog : true ,
-        digital : true
-    }
-    
 }
 
-export class Hrad implements iChannel {
-
+export class Hrad implements iChannel < eFormatType.AnalogDigital > {
     name = 'Град' ;
-    broadcastFormat = {
-        analog : true ,
-        digital : true
-    }
-    
 }
 
-export class IT3 implements iChannel {
-
+export class IT3 implements iChannel < eFormatType.AnalogDigital > {
     name = 'ИТ3' ;
-    broadcastFormat = {
-        analog : true ,
-        digital : true
-    }
-    
 }
 
-export class Odessa_Fashion implements iChannel {
-
+export class Odessa_Fashion implements iChannel < eFormatType.Digital > {
     name = 'Odessa Fashion' ;
-    broadcastFormat = {
-        digital : true
-    }
-    
 }
 
-export class UA_ODESA implements iChannel {
-
+export class UA_ODESA implements iChannel < eFormatType.AnalogDigital > {
     name = 'UA: ODESA' ;
-    broadcastFormat = {
-        analog : true ,
-        digital : true
-    }
-    
 }
 
-export class TIS_TV implements iChannel {
-
+export class TIS_TV implements iChannel < eFormatType.Digital > {
     name = 'ТІС-ТВ' ;
-    broadcastFormat = {
-        digital : true
-    }
-    
 }
 
-export class Music_Box_Ukraine implements iChannel {
-
+export class Music_Box_Ukraine implements iChannel < eFormatType.Digital > {
     name = 'Music Box Ukraine' ;
-    broadcastFormat = {
-        digital : true
-    }
-    
 }
 
-export class Pyatyy_kanal implements iChannel {
-
+export class Pyatyy_kanal implements iChannel < eFormatType.Digital > {
     name = '5 канал' ;
-    broadcastFormat = {
-        digital : true
-    }
-    
 }
 
-export class Shist_sotok implements iChannel {
-
+export class Shist_sotok implements iChannel < eFormatType.AnalogDigital > {
     name = '6 соток' ;
-    broadcastFormat = {
-        analog : true ,
-        digital : true
-    }
-    
 }
 
-export class Rada implements iChannel {
-
+export class Rada implements iChannel < eFormatType.AnalogDigital > {
     name = 'Рада' ;
-    broadcastFormat = {
-        analog : true ,
-        digital : true
-    }
-    
 }
 
-export class Trofey implements iChannel {
-
+export class Trofey implements iChannel < eFormatType.AnalogDigital > {
     name = 'Трофей' ;
-    broadcastFormat = {
-        analog : true ,
-        digital : true
-    }
-    
 }
 
-export class Fourever_Music implements iChannel {
-
+export class Fourever_Music implements iChannel < eFormatType.Digital > {
     name = '4ever Music' ;
-    broadcastFormat = {
-        digital : true
-    }
-    
 }
 
-export class Epokha implements iChannel {
-
+export class Epokha implements iChannel < eFormatType.AnalogDigital > {
     name = 'Єпоха' ;
-    broadcastFormat = {
-        analog : true ,
-        digital : true
-    }
-    
 }
 
-export class Terra implements iChannel {
-
+export class Terra implements iChannel < eFormatType.AnalogDigital > {
     name = 'Терра' ;
-    broadcastFormat = {
-        analog : true ,
-        digital : true
-    }
-    
 }
 
-export class Dacha implements iChannel {
-
+export class Dacha implements iChannel < eFormatType.AnalogDigital > {
     name = 'Дача' ;
-    broadcastFormat = {
-        analog : true ,
-        digital : true
-    }
-    
 }
 
-export class Fauna implements iChannel {
-
+export class Fauna implements iChannel < eFormatType.AnalogDigital > {
     name = 'Фауна' ;
-    broadcastFormat = {
-        analog : true ,
-        digital : true
-    }
-    
 }
 
-export class Nauka implements iChannel {
-
+export class Nauka implements iChannel < eFormatType.AnalogDigital > {
     name = 'Наука' ;
-    broadcastFormat = {
-        analog : true ,
-        digital : true
-    }
-    
 }
 
-export class Kyyiv implements iChannel {
-
+export class Kyyiv implements iChannel < eFormatType.Digital > {
     name = 'Київ' ;
-    broadcastFormat = {
-        digital : true
-    }
-    
 }
 
-export class Obozrevatel_TV implements iChannel {
-
+export class Obozrevatel_TV implements iChannel < eFormatType.Digital > {
     name = 'Obozrevatel TV' ;
-    broadcastFormat = {
-        digital : true
-    }
-    
 }
 
-export class PravdaTUT implements iChannel {
-
+export class PravdaTUT implements iChannel < eFormatType.Digital > {
     name = 'ПравдаТУТ' ;
-    broadcastFormat = {
-        digital : true
-    }
-    
 }
 
-export class Chornomorska_teleradiokompaniya implements iChannel {
-
+export class Chornomorska_teleradiokompaniya implements iChannel < eFormatType.Digital > {
     name = 'Чорноморська телерадіокомпанія' ;
-    broadcastFormat = {
-        digital : true
-    }
-    
 }
 
-export class Suspilne_Krym implements iChannel {
-
+export class Suspilne_Krym implements iChannel < eFormatType.AnalogDigital > {
     name = 'Суспільне Крим' ;
-    broadcastFormat = {
-        analog : true ,
-        digital : true
-    }
-    
 }
 
-export class Genuine_TV implements iChannel {
-
+export class Genuine_TV implements iChannel < eFormatType.AnalogDigital > {
     name = 'Genuine TV' ;
-    broadcastFormat = {
-        analog : true ,
-        digital : true
-    }
-    
 }
 
-export class KRTK implements iChannel {
-
+export class KRTK implements iChannel < eFormatType.Digital > {
     name = 'KRT-K' ;
-    broadcastFormat = {
-        digital : true
-    }
-    
 }
 
-export class Pryamyy implements iChannel {
-
+export class Pryamyy implements iChannel < eFormatType.AnalogDigital > {
     name = 'Прямий' ;
-    broadcastFormat = {
-        analog : true ,
-        digital : true
-    }
-    
 }
 
-export class Extreme_Sports implements iChannel {
-
+export class Extreme_Sports implements iChannel < eFormatType.Digital > {
     name = 'Extreme Sports' ;
-    broadcastFormat = {
-        digital : true
-    }
-    
 }
 
-export class UATV implements iChannel {
-
+export class UATV implements iChannel < eFormatType.Digital > {
     name = 'UATV' ;
-    broadcastFormat = {
-        digital : true
-    }
-    
 }
 
-export class Televsesvit implements iChannel {
-
+export class Televsesvit implements iChannel < eFormatType.Digital > {
     name = 'Телевсесвіт' ;
-    broadcastFormat = {
-        digital : true
-    }
-    
 }
 
-export class HD_Fashion implements iChannel {
-
+export class HD_Fashion implements iChannel < eFormatType.Digital > {
     name = 'HD Fashion' ;
-    broadcastFormat = {
-        digital : true
-    }
-    
 }
 
-export class Pershyy implements iChannel {
-
+export class Pershyy implements iChannel < eFormatType.AnalogDigital > {
     name = 'Перший' ;
-    broadcastFormat = {
-        analog : true ,
-        digital : true
-    }
-    
 }
 
-export class TVIQ implements iChannel {
-
+export class TVIQ implements iChannel < eFormatType.Digital > {
     name = 'TVIQ' ;
-    broadcastFormat = {
-        digital : true
-    }
-    
 }
 
-export class Natali implements iChannel {
-
+export class Natali implements iChannel < eFormatType.Digital > {
     name = 'Наталі' ;
-    broadcastFormat = {
-        digital : true
-    }
-    
 }
 
-export class Suspilne_Kultura implements iChannel {
-
+export class Suspilne_Kultura implements iChannel < eFormatType.AnalogDigital > {
     name = 'Суспільне Культура' ;
-    broadcastFormat = {
-        analog : true ,
-        digital : true
-    }
-    
 }
 
-export class Svarozhichi implements iChannel {
-
+export class Svarozhichi implements iChannel < eFormatType.Digital > {
     name = 'Сварожичи' ;
-    broadcastFormat = {
-        digital : true
-    }
-    
 }
 
-export class Halychyna implements iChannel {
-
+export class Halychyna implements iChannel < eFormatType.Digital > {
     name = 'Галичина' ;
-    broadcastFormat = {
-        digital : true
-    }
-    
 }
 
-export class Espreso_TV implements iChannel {
-
+export class Espreso_TV implements iChannel < eFormatType.AnalogDigital > {
     name = 'Еспресо TV' ;
-    broadcastFormat = {
-        analog : true ,
-        digital : true
-    }
-    
 }
 
-export class Milady_Television implements iChannel {
-
+export class Milady_Television implements iChannel < eFormatType.Digital > {
     name = 'Milady Television' ;
-    broadcastFormat = {
-        digital : true
-    }
-    
 }
 
-export class Sonata implements iChannel {
-
+export class Sonata implements iChannel < eFormatType.Digital > {
     name = 'Соната' ;
-    broadcastFormat = {
-        digital : true
-    }
-    
 }
 
-export class News_24 implements iChannel {
-
+export class News_24 implements iChannel < eFormatType.AnalogDigital > {
     name = 'News 24' ;
-    broadcastFormat = {
-        analog : true ,
-        digital : true
-    }
-    
 }
 
-export class Karavan_TV implements iChannel {
-
+export class Karavan_TV implements iChannel < eFormatType.Digital > {
     name = 'Караван TV' ;
-    broadcastFormat = {
-        digital : true
-    }
-    
 }
 
-export class Discovery implements iChannel {
-
+export class Discovery implements iChannel < eFormatType.AnalogDigital > {
     name = 'Discovery' ;
-    broadcastFormat = {
-        analog : true ,
-        digital : true
-    }
-    
 }
 
-export class Animal_Planet implements iChannel {
-
+export class Animal_Planet implements iChannel < eFormatType.AnalogDigital > {
     name = 'Animal Planet' ;
-    broadcastFormat = {
-        analog : true ,
-        digital : true
-    }
-    
 }
 
-export class Eurosport_Odin implements iChannel {
-
+export class Eurosport_Odin implements iChannel < eFormatType.AnalogDigital > {
     name = 'Eurosport 1' ;
-    broadcastFormat = {
-        analog : true ,
-        digital : true
-    }
-    
 }
 
-export class TLC implements iChannel {
-
+export class TLC implements iChannel < eFormatType.AnalogDigital > {
     name = 'TLC' ;
-    broadcastFormat = {
-        analog : true ,
-        digital : true
-    }
-    
 }
 
-export class Suspilne_Uzhhorod implements iChannel {
-
+export class Suspilne_Uzhhorod implements iChannel < eFormatType.Digital > {
     name = 'Суспільне Ужгород' ;
-    broadcastFormat = {
-        digital : true
-    }
-    
 }
 
-export class XSPORT implements iChannel {
-
+export class XSPORT implements iChannel < eFormatType.AnalogDigital > {
     name = 'XSPORT' ;
-    broadcastFormat = {
-        analog : true ,
-        digital : true
-    }
-    
 }
 
-export class Avers implements iChannel {
-
+export class Avers implements iChannel < eFormatType.Digital > {
     name = 'Аверс' ;
-    broadcastFormat = {
-        digital : true
-    }
-    
 }
 
-export class Zakon_TV implements iChannel {
-
+export class Zakon_TV implements iChannel < eFormatType.Digital > {
     name = 'Закон ТВ' ;
-    broadcastFormat = {
-        digital : true
-    }
-    
 }
 
-export class Chanell_4 implements iChannel {
-
+export class Chanell_4 implements iChannel < eFormatType.AnalogDigital > {
     name = 'Chanell 4' ;
-    broadcastFormat = {
-        analog : true ,
-        digital : true
-    }
-    
 }
 
-export class Pershyy_dilovyy implements iChannel {
-
+export class Pershyy_dilovyy implements iChannel < eFormatType.Digital > {
     name = 'Перший діловий' ;
-    broadcastFormat = {
-        digital : true
-    }
-    
 }
 
-export class UNC implements iChannel {
-
+export class UNC implements iChannel < eFormatType.Digital > {
     name = 'UNC' ;
-    broadcastFormat = {
-        digital : true
-    }
-    
 }
 
-export class Islandiya implements iChannel {
-
+export class Islandiya implements iChannel < eFormatType.Digital > {
     name = 'Ісландія' ;
-    broadcastFormat = {
-        digital : true
-    }
-    
 }
 
-export class Live implements iChannel {
-
+export class Live implements iChannel < eFormatType.AnalogDigital > {
     name = 'Live' ;
-    broadcastFormat = {
-        analog : true ,
-        digital : true
-    }
-    
 }
 
-export class Sontse implements iChannel {
-
+export class Sontse implements iChannel < eFormatType.AnalogDigital > {
     name = 'Сонце' ;
-    broadcastFormat = {
-        analog : true ,
-        digital : true
-    }
-    
 }
 
-export class ATR implements iChannel {
-
+export class ATR implements iChannel < eFormatType.Digital > {
     name = 'ATR' ;
-    broadcastFormat = {
-        digital : true
-    }
-    
 }
 
-export class Vosmyy_kanal implements iChannel {
-
+export class Vosmyy_kanal implements iChannel < eFormatType.Digital > {
     name = '8 канал' ;
-    broadcastFormat = {
-        digital : true
-    }
-    
 }
 
-export class Nadiya implements iChannel {
-
+export class Nadiya implements iChannel < eFormatType.Digital > {
     name = 'Надiя' ;
-    broadcastFormat = {
-        digital : true
-    }
-    
 }
 
-export class Pershyy_avtomobilnyy implements iChannel {
-
+export class Pershyy_avtomobilnyy implements iChannel < eFormatType.AnalogDigital > {
     name = 'Перший автомобільний' ;
-    broadcastFormat = {
-        analog : true ,
-        digital : true
-    }
-    
 }
 
-export class ECO_TV implements iChannel {
-
+export class ECO_TV implements iChannel < eFormatType.Digital > {
     name = 'ECO TV' ;
-    broadcastFormat = {
-        digital : true
-    }
-    
 }
 
-export class Dvanadtsyatyy_Kanal implements iChannel {
-
+export class Dvanadtsyatyy_Kanal implements iChannel < eFormatType.Digital > {
     name = '12 Канал' ;
-    broadcastFormat = {
-        digital : true
-    }
-    
 }
 
-export class CHPINFO implements iChannel {
-
+export class CHPINFO implements iChannel < eFormatType.Digital > {
     name = 'ЧП.INFO' ;
-    broadcastFormat = {
-        digital : true
-    }
-    
 }
 
-export class Pershyy_Zakhidnyy implements iChannel {
-
+export class Pershyy_Zakhidnyy implements iChannel < eFormatType.Digital > {
     name = 'Перший Захiдний' ;
-    broadcastFormat = {
-        digital : true
-    }
-    
 }
 
-export class Boutique_TV implements iChannel {
-
+export class Boutique_TV implements iChannel < eFormatType.Digital > {
     name = 'Boutique TV' ;
-    broadcastFormat = {
-        digital : true
-    }
-    
 }
 
-export class TV5 implements iChannel {
-
+export class TV5 implements iChannel < eFormatType.Digital > {
     name = 'TV-5' ;
-    broadcastFormat = {
-        digital : true
-    }
-    
 }
 
-export class BBC_World_News implements iChannel {
-
+export class BBC_World_News implements iChannel < eFormatType.Digital > {
     name = 'BBC World News' ;
-    broadcastFormat = {
-        digital : true
-    }
-    
 }
 
-export class Deutsche_Welle implements iChannel {
-
+export class Deutsche_Welle implements iChannel < eFormatType.Digital > {
     name = 'Deutsche Welle' ;
-    broadcastFormat = {
-        digital : true
-    }
-    
 }
 
-export class France_24 implements iChannel {
-
+export class France_24 implements iChannel < eFormatType.Digital > {
     name = 'France 24' ;
-    broadcastFormat = {
-        digital : true
-    }
-    
 }
 
-export class Euronews implements iChannel {
-
+export class Euronews implements iChannel < eFormatType.Digital > {
     name = 'Euronews' ;
-    broadcastFormat = {
-        digital : true
-    }
-    
 }
 
-export class CNN_International implements iChannel {
-
+export class CNN_International implements iChannel < eFormatType.Digital > {
     name = 'CNN International' ;
-    broadcastFormat = {
-        digital : true
-    }
-    
 }
 
-export class KBS_World implements iChannel {
-
+export class KBS_World implements iChannel < eFormatType.Digital > {
     name = 'KBS World' ;
-    broadcastFormat = {
-        digital : true
-    }
-    
 }
 
-export class Nastoyashcheye_vremya implements iChannel {
-
+export class Nastoyashcheye_vremya implements iChannel < eFormatType.Digital > {
     name = 'Настоящее время' ;
-    broadcastFormat = {
-        digital : true
-    }
-    
 }
 
-export class CNL_Ukrayina implements iChannel {
-
+export class CNL_Ukrayina implements iChannel < eFormatType.Digital > {
     name = 'CNL Україна' ;
-    broadcastFormat = {
-        digital : true
-    }
-    
 }
 
-export class OstWest implements iChannel {
-
+export class OstWest implements iChannel < eFormatType.Digital > {
     name = 'OstWest' ;
-    broadcastFormat = {
-        digital : true
-    }
-    
 }
 
-export class This_is_Bulgaria implements iChannel {
-
+export class This_is_Bulgaria implements iChannel < eFormatType.Digital > {
     name = 'This is Bulgaria' ;
-    broadcastFormat = {
-        digital : true
-    }
-    
 }
 
-export class Travel_TV implements iChannel {
-
+export class Travel_TV implements iChannel < eFormatType.Digital > {
     name = 'Travel TV' ;
-    broadcastFormat = {
-        digital : true
-    }
-    
 }
 
-export class Deluxe_Lounge implements iChannel {
-
+export class Deluxe_Lounge implements iChannel < eFormatType.Digital > {
     name = 'Deluxe Lounge' ;
-    broadcastFormat = {
-        digital : true
-    }
-    
 }
 
-export class Wness_TV implements iChannel {
-
+export class Wness_TV implements iChannel < eFormatType.Digital > {
     name = 'Wness TV' ;
-    broadcastFormat = {
-        digital : true
-    }
-    
 }
 
-export class Deluxe_Music implements iChannel {
-
+export class Deluxe_Music implements iChannel < eFormatType.Digital > {
     name = 'Deluxe Music' ;
-    broadcastFormat = {
-        digital : true
-    }
-    
 }
 
-export class Rock_TV implements iChannel {
-
+export class Rock_TV implements iChannel < eFormatType.Digital > {
     name = 'Rock TV' ;
-    broadcastFormat = {
-        digital : true
-    }
-    
 }
 
-export class Jukebox implements iChannel {
-
+export class Jukebox implements iChannel < eFormatType.Digital > {
     name = 'Jukebox' ;
-    broadcastFormat = {
-        digital : true
-    }
-    
 }
 
-export class Mason_TV implements iChannel {
-
+export class Mason_TV implements iChannel < eFormatType.Digital > {
     name = 'Масон ТВ' ;
-    broadcastFormat = {
-        digital : true
-    }
-    
 }
 
-export class TravelAdventure implements iChannel {
-
+export class TravelAdventure implements iChannel < eFormatType.Digital > {
     name = 'Travel&Adventure' ;
-    broadcastFormat = {
-        digital : true
-    }
-    
 }
 
-export class Kino_1 implements iChannel {
-
+export class Kino_1 implements iChannel < eFormatType.AnalogDigital > {
     name = 'Кино 1' ;
-    broadcastFormat = {
-        analog : true ,
-        digital : true
-    }
-    
 }
 
-export class History_HD implements iChannel {
-
+export class History_HD implements iChannel < eFormatType.AnalogDigital > {
     name = 'History HD' ;
-    broadcastFormat = {
-        analog : true ,
-        digital : true
-    }
-    
 }
 
-export class Travel_HD implements iChannel {
-
+export class Travel_HD implements iChannel < eFormatType.AnalogDigital > {
     name = 'Travel HD' ;
-    broadcastFormat = {
-        analog : true ,
-        digital : true
-    }
-    
 }
 
-export class Viasat_History implements iChannel {
-
+export class Viasat_History implements iChannel < eFormatType.Digital > {
     name = 'Viasat History' ;
-    broadcastFormat = {
-        digital : true
-    }
-    
 }
 
-export class Viasat_Explorer implements iChannel {
-
+export class Viasat_Explorer implements iChannel < eFormatType.Digital > {
     name = 'Viasat Explorer' ;
-    broadcastFormat = {
-        digital : true
-    }
-    
 }
 
-export class Viasat_Nature implements iChannel {
-
+export class Viasat_Nature implements iChannel < eFormatType.Digital > {
     name = 'Viasat Nature' ;
-    broadcastFormat = {
-        digital : true
-    }
-    
 }
 
-export class Black implements iChannel {
-
+export class Black implements iChannel < eFormatType.Digital > {
     name = 'Black' ;
-    broadcastFormat = {
-        digital : true
-    }
-    
 }
 
-export class EU_Music implements iChannel {
-
+export class EU_Music implements iChannel < eFormatType.AnalogDigital > {
     name = 'EU Music' ;
-    broadcastFormat = {
-        analog : true ,
-        digital : true
-    }
-    
 }
 
-export class DuckTV implements iChannel {
-
+export class DuckTV implements iChannel < eFormatType.Digital > {
     name = 'DuckTV+' ;
-    broadcastFormat = {
-        digital : true
-    }
-    
 }
 
-export class Duck_TV implements iChannel {
-
+export class Duck_TV implements iChannel < eFormatType.Digital > {
     name = 'Duck TV' ;
-    broadcastFormat = {
-        digital : true
-    }
-    
 }
 
-export class TiJi implements iChannel {
-
+export class TiJi implements iChannel < eFormatType.Digital > {
     name = 'TiJi' ;
-    broadcastFormat = {
-        digital : true
-    }
-    
 }
 
-export class Boomerang implements iChannel {
-
+export class Boomerang implements iChannel < eFormatType.Digital > {
     name = 'Boomerang' ;
-    broadcastFormat = {
-        digital : true
-    }
-    
 }
 
-export class FlixSnip implements iChannel {
-
+export class FlixSnip implements iChannel < eFormatType.AnalogDigital > {
     name = 'Flix&Snip' ;
-    broadcastFormat = {
-        analog : true ,
-        digital : true
-    }
-    
 }
 
-export class Malyatko_TV implements iChannel {
-
+export class Malyatko_TV implements iChannel < eFormatType.Digital > {
     name = 'Малятко TV' ;
-    broadcastFormat = {
-        digital : true
-    }
-    
 }
 
-export class Cartoon_Network implements iChannel {
-
+export class Cartoon_Network implements iChannel < eFormatType.AnalogDigital > {
     name = 'Cartoon Network' ;
-    broadcastFormat = {
-        analog : true ,
-        digital : true
-    }
-    
 }
 
-export class Lale implements iChannel {
-
+export class Lale implements iChannel < eFormatType.Digital > {
     name = 'Lâle' ;
-    broadcastFormat = {
-        digital : true
-    }
-    
 }
 
-export class Mezzo implements iChannel {
-
+export class Mezzo implements iChannel < eFormatType.Digital > {
     name = 'Mezzo' ;
-    broadcastFormat = {
-        digital : true
-    }
-    
 }
 
-export class NIKI_Kids implements iChannel {
-
+export class NIKI_Kids implements iChannel < eFormatType.AnalogDigital > {
     name = 'NIKI Kids' ;
-    broadcastFormat = {
-        analog : true ,
-        digital : true
-    }
-    
 }
 
-export class NIKI_Junior implements iChannel {
-
+export class NIKI_Junior implements iChannel < eFormatType.AnalogDigital > {
     name = 'NIKI Junior' ;
-    broadcastFormat = {
-        analog : true ,
-        digital : true
-    }
-    
 }
 
-export class Suspilne_Donbas implements iChannel {
-
+export class Suspilne_Donbas implements iChannel < eFormatType.Digital > {
     name = 'Суспільне Донбас' ;
-    broadcastFormat = {
-        digital : true
-    }
-    
 }
 
-export class Sport1 implements iChannel {
-
+export class Sport1 implements iChannel < eFormatType.Digital > {
     name = 'Sport1' ;
-    broadcastFormat = {
-        digital : true
-    }
-    
 }
 
-export class Sport2 implements iChannel {
-
+export class Sport2 implements iChannel < eFormatType.Digital > {
     name = 'Sport2' ;
-    broadcastFormat = {
-        digital : true
-    }
-    
 }
 
-export class Setanta_Sports implements iChannel {
-
+export class Setanta_Sports implements iChannel < eFormatType.AnalogDigital > {
     name = 'Setanta Sports' ;
-    broadcastFormat = {
-        analog : true ,
-        digital : true
-    }
-    
 }
 
-export class Viasat_Sport implements iChannel {
-
+export class Viasat_Sport implements iChannel < eFormatType.Digital > {
     name = 'Viasat Sport' ;
-    broadcastFormat = {
-        digital : true
-    }
-    
 }
 
-export class Sport1_Baltic implements iChannel {
-
+export class Sport1_Baltic implements iChannel < eFormatType.Digital > {
     name = 'Sport1 Baltic' ;
-    broadcastFormat = {
-        digital : true
-    }
-    
 }
 
-export class Sport2_Baltic implements iChannel {
-
+export class Sport2_Baltic implements iChannel < eFormatType.Digital > {
     name = 'Sport2 Baltic' ;
-    broadcastFormat = {
-        digital : true
-    }
-    
 }
 
-export class Sport1_HD implements iChannel {
-
+export class Sport1_HD implements iChannel < eFormatType.Digital > {
     name = 'Sport1 HD' ;
-    broadcastFormat = {
-        digital : true
-    }
-    
 }
 
-export class FastFun_Box implements iChannel {
-
+export class FastFun_Box implements iChannel < eFormatType.Digital > {
     name = 'Fast&Fun Box' ;
-    broadcastFormat = {
-        digital : true
-    }
-    
 }
 
-export class DocuBox implements iChannel {
-
+export class DocuBox implements iChannel < eFormatType.AnalogDigital > {
     name = 'DocuBox' ;
-    broadcastFormat = {
-        analog : true ,
-        digital : true
-    }
-    
 }
 
-export class Trace_Sport_HD implements iChannel {
-
+export class Trace_Sport_HD implements iChannel < eFormatType.Digital > {
     name = 'Trace Sport HD' ;
-    broadcastFormat = {
-        digital : true
-    }
-    
 }
 
-export class FilmBox_ArtHouse implements iChannel {
-
+export class FilmBox_ArtHouse implements iChannel < eFormatType.AnalogDigital > {
     name = 'FilmBox ArtHouse' ;
-    broadcastFormat = {
-        analog : true ,
-        digital : true
-    }
-    
 }
 
-export class FilmBox implements iChannel {
-
+export class FilmBox implements iChannel < eFormatType.AnalogDigital > {
     name = 'FilmBox' ;
-    broadcastFormat = {
-        analog : true ,
-        digital : true
-    }
-    
 }
 
-export class FashionBox implements iChannel {
-
+export class FashionBox implements iChannel < eFormatType.Digital > {
     name = 'FashionBox' ;
-    broadcastFormat = {
-        digital : true
-    }
-    
 }
 
-export class TuneBox implements iChannel {
-
+export class TuneBox implements iChannel < eFormatType.AnalogDigital > {
     name = '360TuneBox' ;
-    broadcastFormat = {
-        analog : true ,
-        digital : true
-    }
-    
 }
 
-export class FightBox implements iChannel {
-
+export class FightBox implements iChannel < eFormatType.Digital > {
     name = 'FightBox' ;
-    broadcastFormat = {
-        digital : true
-    }
-    
 }
 
-export class Nautical_Channel implements iChannel {
-
+export class Nautical_Channel implements iChannel < eFormatType.Digital > {
     name = 'Nautical Channel' ;
-    broadcastFormat = {
-        digital : true
-    }
-    
 }
 
-export class SEA_TV implements iChannel {
-
+export class SEA_TV implements iChannel < eFormatType.AnalogDigital > {
     name = 'SEA TV' ;
-    broadcastFormat = {
-        analog : true ,
-        digital : true
-    }
-    
 }
 
-export class VIP_Premiere implements iChannel {
-
+export class VIP_Premiere implements iChannel < eFormatType.Digital > {
     name = 'VIP Premiere' ;
-    broadcastFormat = {
-        digital : true
-    }
-    
 }
 
-export class VIP_Megahit implements iChannel {
-
+export class VIP_Megahit implements iChannel < eFormatType.Digital > {
     name = 'VIP Megahit' ;
-    broadcastFormat = {
-        digital : true
-    }
-    
 }
 
-export class VIP_Comedy implements iChannel {
-
+export class VIP_Comedy implements iChannel < eFormatType.Digital > {
     name = 'VIP Comedy' ;
-    broadcastFormat = {
-        digital : true
-    }
-    
 }
 
-export class TV1000_East implements iChannel {
-
+export class TV1000_East implements iChannel < eFormatType.Digital > {
     name = 'TV1000 East' ;
-    broadcastFormat = {
-        digital : true
-    }
-    
 }
 
-export class TV1000_Action_East implements iChannel {
-
+export class TV1000_Action_East implements iChannel < eFormatType.Digital > {
     name = 'TV1000 Action East' ;
-    broadcastFormat = {
-        digital : true
-    }
-    
 }
 
-export class TV1000_World_Kino implements iChannel {
-
+export class TV1000_World_Kino implements iChannel < eFormatType.AnalogDigital > {
     name = 'TV1000 World Kino' ;
-    broadcastFormat = {
-        analog : true ,
-        digital : true
-    }
-    
 }
 
-export class TV1 implements iChannel {
-
+export class TV1 implements iChannel < eFormatType.Digital > {
     name = 'ТВ-1' ;
-    broadcastFormat = {
-        digital : true
-    }
-    
 }
 
-export class Epic_Drama implements iChannel {
-
+export class Epic_Drama implements iChannel < eFormatType.Digital > {
     name = 'Epic Drama' ;
-    broadcastFormat = {
-        digital : true
-    }
-    
 }
 
-export class Trace_Urban implements iChannel {
-
+export class Trace_Urban implements iChannel < eFormatType.Digital > {
     name = 'Trace Urban' ;
-    broadcastFormat = {
-        digital : true
-    }
-    
 }
 
-export class Four_Ever_Cinema implements iChannel {
-
+export class Four_Ever_Cinema implements iChannel < eFormatType.AnalogDigital > {
     name = 'Four Ever Cinema' ;
-    broadcastFormat = {
-        analog : true ,
-        digital : true
-    }
-    
 }
 
-export class Dorama implements iChannel {
-
+export class Dorama implements iChannel < eFormatType.Digital > {
     name = 'Дорама' ;
-    broadcastFormat = {
-        digital : true
-    }
-    
 }
 
-export class AMC implements iChannel {
-
-    name = 'AMC' ;
-    broadcastFormat = {
-        analog : true ,
-        digital : true
-    }
-    
+export class AMC implements iChannel < eFormatType.AnalogDigital > {
+    name = 'AMC' ;    
 }
 
-export class KinoKazka implements iChannel {
-
+export class KinoKazka implements iChannel < eFormatType.Digital > {
     name = 'КіноКазка' ;
-    broadcastFormat = {
-        digital : true
-    }
-    
 }
 
-export class Bollywood implements iChannel {
-
-    name = 'Bollywood' ;
-    broadcastFormat = {
-        digital : true
-    }
-    
+export class Bollywood implements iChannel < eFormatType.Digital > {
+    name = 'Bollywood' ;    
 }
 
-export class QuizTV implements iChannel {
-
+export class QuizTV implements iChannel < eFormatType.Digital > {
     name = 'Quiz TV' ;
-    broadcastFormat = {
-        digital : true
-    }
-    
 }
 
-export class Ukrainian_Fashion_TV implements iChannel {
-
+export class Ukrainian_Fashion_TV implements iChannel < eFormatType.Digital > {
     name = 'Ukrainian Fashion TV' ;
-    broadcastFormat = {
-        digital : true
-    }
-    
 }
 
-export class ReserveA implements iChannel {
-
+export class ReserveA implements iChannel < eFormatType.Analog > {
     name = 'Резерв, аналогове мовлення' ;
-    broadcastFormat = {
-        analog : true 
-    }
-    
 }
 
-export class ReserveAG implements iChannel {
-
+export class ReserveAG implements iChannel < eFormatType.AnalogDigital > {
     name = 'Резерв, аналогове і цифрове мовлення' ;
-    broadcastFormat = {
-        analog : true ,
-        digital : true
-    }
-    
 }

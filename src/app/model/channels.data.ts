@@ -1,4 +1,3 @@
-import { Channel } from "./channel.model";
 import * as TVChannels from "./channels.model"
 
 export class ChannelsData {

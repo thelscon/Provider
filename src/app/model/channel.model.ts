@@ -1,6 +1,10 @@
 import { eFormatType } from "./types";
-import { iChannel } from "./types";
+import { tBroadcastFormat } from "./types";
 
+export interface iChannel < K extends eFormatType > {
+    name : string ,
+    broadcastFormat ?: tBroadcastFormat < K >
+}
 
 export class Channel < K extends eFormatType > implements iChannel < K > {
 

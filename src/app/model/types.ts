@@ -4,7 +4,7 @@ export enum eFormatType {
     AnalogDigital = 'analog digital' ,
     Empty = ''
 }
-type tBroadcastFormat < K > = 
+export type tBroadcastFormat < K > = 
     K extends eFormatType.Analog ? {
         analog : true ,
         digital ?: true
@@ -22,14 +22,3 @@ type tBroadcastFormat < K > =
         digital ?: true
     }
     : {}
-
-export interface iChannel < K extends eFormatType > {
-    name : string ,
-    broadcastFormat ?: tBroadcastFormat < K >
-}
-
-export interface iTariff {
-    name : string ,
-    analogChannels  : iChannel < eFormatType.Analog >  [] ,
-    digitalChannels : iChannel < eFormatType.Digital >  [] 
-}
