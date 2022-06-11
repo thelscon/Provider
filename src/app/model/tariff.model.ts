@@ -1,8 +1,7 @@
-import { eFormatType } from "./types" ;
-import { iChannel } from "./channel.model";
+import { tChannel } from "./channel.model"
 
 export interface iTariff {
     name : string ,
-    analogChannels  : iChannel < eFormatType.Analog >  [] ,
-    digitalChannels : iChannel < eFormatType.Digital >  [] 
+    analogChannels  : tChannel < 'a' > [] ,
+    digitalChannels : tChannel < 'd' > [] 
 }

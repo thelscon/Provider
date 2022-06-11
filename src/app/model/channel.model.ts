@@ -1,14 +1,25 @@
-import { eFormatType } from "./types";
-import { tBroadcastFormat } from "./types";
-
-export interface iChannel < K extends eFormatType > {
-    name : string ,
-    broadcastFormat ?: tBroadcastFormat < K >
-}
-
-export class Channel < K extends eFormatType > implements iChannel < K > {
-
-    constructor ( 
-        public name : string ) {}
-
-}
+export type tChannel < T > =
+    T extends 'a' ? {
+        name : string ,
+        broadcastFormat : {
+            analog : boolean ,
+            digital ?: boolean
+        }
+    }
+    : T extends 'd' ? {
+        name : string ,
+        broadcastFormat : {
+            analog ?: boolean
+            digital : boolean
+        }
+    }
+    : T extends 'ad' ? {
+        name : string ,
+        broadcastFormat : {
+            analog : boolean ,
+            digital : boolean
+        }
+    }
+    : {
+        name : string
+    } ;

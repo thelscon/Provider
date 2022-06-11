@@ -2,9 +2,9 @@ import { NgModule } from "@angular/core";
 import { BrowserModule } from "@angular/platform-browser";
 import { FormsModule } from "@angular/forms";
 
-import { ChannelsData } from "./channels.data";
+import { SocialTariff } from "./tariff.data";
 
 @NgModule ({
-    providers : [ ChannelsData ]
+    providers : [ SocialTariff ]
 })
-export class ChannelsModule {}
+export class TariffModule {}
