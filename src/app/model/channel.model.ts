@@ -1,19 +1,19 @@
-export type tChannel < T > =
-    T extends 'a' ? {
+export type tChannel < T extends 'analog' | 'digital' | 'analog digital' > =
+    T extends 'analog' ? {
         name : string ,
         broadcastFormat : {
             analog : boolean ,
             digital ?: boolean
         }
     }
-    : T extends 'd' ? {
+    : T extends 'digital' ? {
         name : string ,
         broadcastFormat : {
             analog ?: boolean
             digital : boolean
         }
     }
-    : T extends 'ad' ? {
+    : T extends 'analog digital' ? {
         name : string ,
         broadcastFormat : {
             analog : boolean ,
@@ -21,5 +21,6 @@ export type tChannel < T > =
         }
     }
     : {
-        name : string
+        name : string ,
+        broadcastFormat : {}
     } ;

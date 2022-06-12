@@ -2,13 +2,1588 @@ import { tChannel } from "./channel.model";
 
 export class ChannelsData {
 
-    Inter : tChannel < 'ad' > = {
+    Inter : tChannel < 'analog digital' > = {
         name : 'Інтер' ,
         broadcastFormat : {
             analog : true ,
             digital : true
         }
     } ;
+
+    NTN : tChannel < 'analog digital' >= {
+        name : 'НТН' ,
+        broadcastFormat : {
+            analog : true ,
+            digital : true
+        }
+    }
+
+    Zoom : tChannel < 'digital' >= {
+        name : 'Zoom' ,
+        broadcastFormat : {
+            digital : true
+        }
+    }
+
+    Piksel : tChannel < 'analog digital' >= {
+        name : 'Піксель' ,
+        broadcastFormat : {
+            analog : true ,
+            digital : true
+        }
+    }
+
+    Enter_film : tChannel < 'analog digital' >= {
+        name : 'Enter-фільм' ,
+        broadcastFormat : {
+            analog : true ,
+            digital : true
+        }
+    }
+
+    Meha : tChannel < 'analog digital' >= {
+        name : 'Мега' ,
+        broadcastFormat : {
+            analog : true ,
+            digital : true
+        }
+    }
+
+    K1 : tChannel < 'analog digital' >= {
+        name : 'К1' ,
+        broadcastFormat : {
+            analog : true ,
+            digital : true
+        }
+    }
+
+    K2 : tChannel < 'digital' >= {
+        name : 'К2' ,
+        broadcastFormat : {
+            digital : true
+        }
+    }
+
+    Bolt : tChannel < 'digital' >= {
+        name : 'Bolt' ,
+        broadcastFormat : {
+            digital : true
+        }
+    }
+
+    Kvartal_TV : tChannel < 'digital' >= {
+        name : 'Квартал TV' ,
+        broadcastFormat : {
+            digital : true
+        }
+    }
+
+    TRK_Ukrayina : tChannel < 'analog digital' >= {
+        name : 'ТРК Україна' ,
+        broadcastFormat : {
+            analog : true ,
+            digital : true
+        }
+    }
+
+    NLO_TV : tChannel < 'analog digital' >= {
+        name : 'НЛО TV' ,
+        broadcastFormat : {
+            analog : true ,
+            digital : true
+        }
+    }
+
+    Indyho_TV : tChannel < 'digital' >= {
+        name : 'Індиго TV' ,
+        broadcastFormat : {
+            digital : true
+        }
+    }
+
+    Ukrayina_24 : tChannel < 'analog digital' >= {
+        name : 'Україна 24' ,
+        broadcastFormat : {
+            analog : true ,
+            digital : true
+        }
+    }
+
+    STB : tChannel < 'analog digital' >= {
+        name : 'СТБ' ,
+        broadcastFormat : {
+            analog : true ,
+            digital : true
+        }
+    }
+
+    ICTV : tChannel < 'analog digital' >= {
+        name : 'ICTV' ,
+        broadcastFormat : {
+            analog : true ,
+            digital : true
+        }
+    }
+
+    Novyy_kanal : tChannel < 'analog digital' >= {
+        name : 'Новий канал' ,
+        broadcastFormat : {
+            analog : true ,
+            digital : true
+        }
+    }
+
+    М1 : tChannel < 'digital' >= {
+        name : 'M1' ,
+        broadcastFormat : {
+            digital : true
+        }
+    }
+
+    M2 : tChannel < 'analog digital' >= {
+        name : 'M2' ,
+        broadcastFormat : {
+            analog : true ,
+            digital : true
+        }
+    }
+
+    OTSE : tChannel < 'analog digital' >= {
+        name : 'ОЦЕ' ,
+        broadcastFormat : {
+            analog : true ,
+            digital : true
+        }
+    }
+
+    Odyn_plyus_odyn : tChannel < 'analog digital' >= {
+        name : '1+1' ,
+        broadcastFormat : {
+            analog : true ,
+            digital : true
+        }
+    }
+
+    Dva_plyus_dva : tChannel < 'analog digital' >= {
+        name : '2+2' ,
+        broadcastFormat : {
+            analog : true ,
+            digital : true
+        }
+    }
+
+    TET : tChannel < 'analog digital' >= {
+        name : 'ТЕТ' ,
+        broadcastFormat : {
+            analog : true ,
+            digital : true
+        }
+    }
+
+    FILMUADrama : tChannel < 'digital' >= {
+        name : 'FILMUADrama' ,
+        broadcastFormat : {
+            digital : true
+        }
+    }
+
+    Paramount_Comedy : tChannel < 'analog digital' >= {
+        name : 'Paramount Comedy' ,
+        broadcastFormat : {
+            analog : true ,
+            digital : true
+        }
+    }
+
+    UNIAN : tChannel < 'analog digital' >= {
+        name : 'УНІАН' ,
+        broadcastFormat : {
+            analog : true ,
+            digital : true
+        }
+    }
+
+    PlusPlus : tChannel < 'analog digital' >= {
+        name : 'ПлюсПлюс' ,
+        broadcastFormat : {
+            analog : true ,
+            digital : true
+        }
+    }
+
+    Bihudi : tChannel < 'analog digital' >= {
+        name : 'Бігуді' ,
+        broadcastFormat : {
+            analog : true ,
+            digital : true
+        }
+    }
+
+    Somyy_kanal : tChannel < 'analog digital' >= {
+        name : '7 канал' ,
+        broadcastFormat : {
+            analog : true ,
+            digital : true
+        }
+    }
+
+    Dumskaya_TV : tChannel < 'analog digital' >= {
+        name : 'Думская.TV' ,
+        broadcastFormat : {
+            analog : true ,
+            digital : true
+        }
+    }
+
+    Pervyy_gorodskoy : tChannel < 'analog digital' >= {
+        name : 'Первый городской' ,
+        broadcastFormat : {
+            analog : true ,
+            digital : true
+        }
+    }
+
+    Tretiy_tsifrovoy : tChannel < 'analog digital' >= {
+        name : 'Третий цифровой' ,
+        broadcastFormat : {
+            analog : true ,
+            digital : true
+        }
+    }
+
+    Media_Inform : tChannel < 'analog digital' >= {
+        name : 'Медиа Информ' ,
+        broadcastFormat : {
+            analog : true ,
+            digital : true
+        }
+    }
+
+    Tsentralnyy : tChannel < 'digital' >= {
+        name : 'Центральный' ,
+        broadcastFormat : {
+            digital : true
+        }
+    }
+
+    Zoryanyy : tChannel < 'digital' >= {
+        name : 'Зоряний' ,
+        broadcastFormat : {
+            digital : true
+        }
+    }
+
+    Odesa_live : tChannel < 'analog digital' >= {
+        name : 'Odesa.live' ,
+        broadcastFormat : {
+            analog : true ,
+            digital : true
+        }
+    }
+
+    Apostrof_TV : tChannel < 'digital' >= {
+        name : 'Апостроф TV' ,
+        broadcastFormat : {
+            digital : true
+        }
+    }
+
+    Kruh : tChannel < 'analog digital' >= {
+        name : 'Круг' ,
+        broadcastFormat : {
+            analog : true ,
+            digital : true
+        }
+    }
+
+    Reporter : tChannel < 'analog digital' >= {
+        name : 'Репортер' ,
+        broadcastFormat : {
+            analog : true ,
+            digital : true
+        }
+    }
+
+    Moya_Odessa : tChannel < 'digital' >= {
+        name : 'Моя Одесса' ,
+        broadcastFormat : {
+            digital : true
+        }
+    }
+
+    PLUS : tChannel < 'analog digital' >= {
+        name : 'PLUS' ,
+        broadcastFormat : {
+            analog : true ,
+            digital : true
+        }
+    }
+
+    Hlas : tChannel < 'analog digital' >= {
+        name : 'Глас' ,
+        broadcastFormat : {
+            analog : true ,
+            digital : true
+        }
+    }
+
+    Hrad : tChannel < 'analog digital' >= {
+        name : 'Град' ,
+        broadcastFormat : {
+            analog : true ,
+            digital : true
+        }
+    }
+
+    IT3 : tChannel < 'analog digital' >= {
+        name : 'ИТ3' ,
+        broadcastFormat : {
+            analog : true ,
+            digital : true
+        }
+    }
+
+    Odessa_Fashion : tChannel < 'digital' >= {
+        name : 'Odessa Fashion' ,
+        broadcastFormat : {
+            digital : true
+        }
+    }
+
+    UA_ODESA : tChannel < 'analog digital' >= {
+        name : 'UA: ODESA' ,
+        broadcastFormat : {
+            analog : true ,
+            digital : true
+        }
+    }
+
+    TIS_TV : tChannel < 'digital' >= {
+        name : 'ТІС-ТВ' ,
+        broadcastFormat : {
+            digital : true
+        }
+    }
+
+    Music_Box_Ukraine : tChannel < 'digital' >= {
+        name : 'Music Box Ukraine' ,
+        broadcastFormat : {
+            digital : true
+        }
+    }
+
+    Pyatyy_kanal : tChannel < 'digital' >= {
+        name : '5 канал' ,
+        broadcastFormat : {
+            digital : true
+        }
+    }
+
+    Shist_sotok : tChannel < 'analog digital' >= {
+        name : '6 соток' ,
+        broadcastFormat : {
+            analog : true ,
+            digital : true
+        }
+    }
+
+    Rada : tChannel < 'analog digital' >= {
+        name : 'Рада' ,
+        broadcastFormat : {
+            analog : true ,
+            digital : true
+        }
+    }
+
+    Trofey : tChannel < 'analog digital' >= {
+        name : 'Трофей' ,
+        broadcastFormat : {
+            analog : true ,
+            digital : true
+        }
+    }
+
+    Fourever_Music : tChannel < 'digital' >= {
+        name : '4ever Music' ,
+        broadcastFormat : {
+            digital : true
+        }
+    }
+
+    Epokha : tChannel < 'analog digital' >= {
+        name : 'Єпоха' ,
+        broadcastFormat : {
+            analog : true ,
+            digital : true
+        }
+    }
+
+    Terra : tChannel < 'analog digital' >= {
+        name : 'Терра' ,
+        broadcastFormat : {
+            analog : true ,
+            digital : true
+        }
+    }
+
+    Dacha : tChannel < 'analog digital' >= {
+        name : 'Дача' ,
+        broadcastFormat : {
+            analog : true ,
+            digital : true
+        }
+    }
+
+    Fauna : tChannel < 'analog digital' >= {
+        name : 'Фауна' ,
+        broadcastFormat : {
+            analog : true ,
+            digital : true
+        }
+    }
+
+    Nauka : tChannel < 'analog digital' >= {
+        name : 'Наука' ,
+        broadcastFormat : {
+            analog : true ,
+            digital : true
+        }
+    }
+
+    Kyyiv : tChannel < 'digital' >= {
+        name : 'Київ' ,
+        broadcastFormat : {
+            digital : true
+        }
+    }
+
+    Obozrevatel_TV : tChannel < 'digital' >= {
+        name : 'Obozrevatel TV' ,
+        broadcastFormat : {
+            digital : true
+        }
+    }
+
+    PravdaTUT : tChannel < 'digital' >= {
+        name : 'ПравдаТУТ' ,
+        broadcastFormat : {
+            digital : true
+        }
+    }
+
+    Chornomorska_teleradiokompaniya : tChannel < 'digital' >= {
+        name : 'Чорноморська телерадіокомпанія' ,
+        broadcastFormat : {
+            digital : true
+        }
+    }
+
+    Suspilne_Krym : tChannel < 'analog digital' >= {
+        name : 'Суспільне Крим' ,
+        broadcastFormat : {
+            analog : true ,
+            digital : true
+        }
+    }
+
+    Genuine_TV : tChannel < 'analog digital' >= {
+        name : 'Genuine TV' ,
+        broadcastFormat : {
+            analog : true ,
+            digital : true
+        }
+    }
+
+    KRTK : tChannel < 'digital' >= {
+        name : 'KRT-K' ,
+        broadcastFormat : {
+            digital : true
+        }
+    }
+
+    Pryamyy : tChannel < 'analog digital' >= {
+        name : 'Прямий' ,
+        broadcastFormat : {
+            analog : true ,
+            digital : true
+        }
+    }
+
+    Extreme_Sports : tChannel < 'digital' >= {
+        name : 'Extreme Sports' ,
+        broadcastFormat : {
+            digital : true
+        }
+    }
+
+    UATV : tChannel < 'digital' >= {
+        name : 'UATV' ,
+        broadcastFormat : {
+            digital : true
+        }
+    }
+
+    Televsesvit : tChannel < 'digital' >= {
+        name : 'Телевсесвіт' ,
+        broadcastFormat : {
+            digital : true
+        }
+    }
+
+    HD_Fashion : tChannel < 'digital' >= {
+        name : 'HD Fashion' ,
+        broadcastFormat : {
+            digital : true
+        }
+    }
+
+    Pershyy : tChannel < 'analog digital' >= {
+        name : 'Перший' ,
+        broadcastFormat : {
+            analog : true ,
+            digital : true
+        }
+    }
+
+    TVIQ : tChannel < 'digital' >= {
+        name : 'TVIQ' ,
+        broadcastFormat : {
+            digital : true
+        }
+    }
+
+    Natali : tChannel < 'digital' >= {
+        name : 'Наталі' ,
+        broadcastFormat : {
+            digital : true
+        }
+    }
+
+    Suspilne_Kultura : tChannel < 'analog digital' >= {
+        name : 'Суспільне Культура' ,
+        broadcastFormat : {
+            analog : true ,
+            digital : true
+        }
+    }
+
+    Svarozhichi : tChannel < 'digital' >= {
+        name : 'Сварожичи' ,
+        broadcastFormat : {
+            digital : true
+        }
+    }
+
+    Halychyna : tChannel < 'digital' >= {
+        name : 'Галичина' ,
+        broadcastFormat : {
+            digital : true
+        }
+    }
+
+    Espreso_TV : tChannel < 'analog digital' >= {
+        name : 'Еспресо TV' ,
+        broadcastFormat : {
+            analog : true ,
+            digital : true
+        }
+    }
+
+    Milady_Television : tChannel < 'digital' >= {
+        name : 'Milady Television' ,
+        broadcastFormat : {
+            digital : true
+        }
+    }
+
+    Sonata : tChannel < 'digital' >= {
+        name : 'Соната' ,
+        broadcastFormat : {
+            digital : true
+        }
+    }
+
+    News_24 : tChannel < 'analog digital' >= {
+        name : 'News 24' ,
+        broadcastFormat : {
+            analog : true ,
+            digital : true
+        }
+    }
+
+    Karavan_TV : tChannel < 'digital' >= {
+        name : 'Караван TV' ,
+        broadcastFormat : {
+            digital : true
+        }
+    }
+
+    Discovery : tChannel < 'analog digital' >= {
+        name : 'Discovery' ,
+        broadcastFormat : {
+            analog : true ,
+            digital : true
+        }
+    }
+
+    Animal_Planet : tChannel < 'analog digital' >= {
+        name : 'Animal Planet' ,
+        broadcastFormat : {
+            analog : true ,
+            digital : true
+        }
+    }
+
+    Eurosport_Odin : tChannel < 'analog digital' >= {
+        name : 'Eurosport 1' ,
+        broadcastFormat : {
+            analog : true ,
+            digital : true
+        }
+    }
+
+    TLC : tChannel < 'analog digital' >= {
+        name : 'TLC' ,
+        broadcastFormat : {
+            analog : true ,
+            digital : true
+        }
+    }
+
+    Suspilne_Uzhhorod : tChannel < 'digital' >= {
+        name : 'Суспільне Ужгород' ,
+        broadcastFormat : {
+            digital : true
+        }
+    }
+
+    XSPORT : tChannel < 'analog digital' >= {
+        name : 'XSPORT' ,
+        broadcastFormat : {
+            analog : true ,
+            digital : true
+        }
+    }
+
+    Avers : tChannel < 'digital' >= {
+        name : 'Аверс' ,
+        broadcastFormat : {
+            digital : true
+        }
+    }
+
+    : tChannel < 'analog digital' >= {
+        name : '' ,
+        broadcastFormat : {
+            analog : true ,
+            digital : true
+        }
+    }
+
+    : tChannel < 'analog digital' >= {
+        name : '' ,
+        broadcastFormat : {
+            analog : true ,
+            digital : true
+        }
+    }
+
+    : tChannel < 'analog digital' >= {
+        name : '' ,
+        broadcastFormat : {
+            analog : true ,
+            digital : true
+        }
+    }
+
+    : tChannel < 'analog digital' >= {
+        name : '' ,
+        broadcastFormat : {
+            analog : true ,
+            digital : true
+        }
+    }
+
+    : tChannel < 'analog digital' >= {
+        name : '' ,
+        broadcastFormat : {
+            analog : true ,
+            digital : true
+        }
+    }
+
+    : tChannel < 'analog digital' >= {
+        name : '' ,
+        broadcastFormat : {
+            analog : true ,
+            digital : true
+        }
+    }
+
+    : tChannel < 'analog digital' >= {
+        name : '' ,
+        broadcastFormat : {
+            analog : true ,
+            digital : true
+        }
+    }
+
+    : tChannel < 'analog digital' >= {
+        name : '' ,
+        broadcastFormat : {
+            analog : true ,
+            digital : true
+        }
+    }
+
+    : tChannel < 'analog digital' >= {
+        name : '' ,
+        broadcastFormat : {
+            analog : true ,
+            digital : true
+        }
+    }
+
+    : tChannel < 'analog digital' >= {
+        name : '' ,
+        broadcastFormat : {
+            analog : true ,
+            digital : true
+        }
+    }
+
+    : tChannel < 'analog digital' >= {
+        name : '' ,
+        broadcastFormat : {
+            analog : true ,
+            digital : true
+        }
+    }
+
+    : tChannel < 'analog digital' >= {
+        name : '' ,
+        broadcastFormat : {
+            analog : true ,
+            digital : true
+        }
+    }
+
+    : tChannel < 'analog digital' >= {
+        name : '' ,
+        broadcastFormat : {
+            analog : true ,
+            digital : true
+        }
+    }
+
+    : tChannel < 'analog digital' >= {
+        name : '' ,
+        broadcastFormat : {
+            analog : true ,
+            digital : true
+        }
+    }
+
+    : tChannel < 'analog digital' >= {
+        name : '' ,
+        broadcastFormat : {
+            analog : true ,
+            digital : true
+        }
+    }
+
+    : tChannel < 'analog digital' >= {
+        name : '' ,
+        broadcastFormat : {
+            analog : true ,
+            digital : true
+        }
+    }
+
+    : tChannel < 'analog digital' >= {
+        name : '' ,
+        broadcastFormat : {
+            analog : true ,
+            digital : true
+        }
+    }
+
+    : tChannel < 'analog digital' >= {
+        name : '' ,
+        broadcastFormat : {
+            analog : true ,
+            digital : true
+        }
+    }
+
+    : tChannel < 'analog digital' >= {
+        name : '' ,
+        broadcastFormat : {
+            analog : true ,
+            digital : true
+        }
+    }
+
+    : tChannel < 'analog digital' >= {
+        name : '' ,
+        broadcastFormat : {
+            analog : true ,
+            digital : true
+        }
+    }
+
+    : tChannel < 'analog digital' >= {
+        name : '' ,
+        broadcastFormat : {
+            analog : true ,
+            digital : true
+        }
+    }
+
+    : tChannel < 'analog digital' >= {
+        name : '' ,
+        broadcastFormat : {
+            analog : true ,
+            digital : true
+        }
+    }
+
+    : tChannel < 'analog digital' >= {
+        name : '' ,
+        broadcastFormat : {
+            analog : true ,
+            digital : true
+        }
+    }
+
+    : tChannel < 'analog digital' >= {
+        name : '' ,
+        broadcastFormat : {
+            analog : true ,
+            digital : true
+        }
+    }
+
+    : tChannel < 'analog digital' >= {
+        name : '' ,
+        broadcastFormat : {
+            analog : true ,
+            digital : true
+        }
+    }
+
+    : tChannel < 'analog digital' >= {
+        name : '' ,
+        broadcastFormat : {
+            analog : true ,
+            digital : true
+        }
+    }
+
+    : tChannel < 'analog digital' >= {
+        name : '' ,
+        broadcastFormat : {
+            analog : true ,
+            digital : true
+        }
+    }
+
+    : tChannel < 'analog digital' >= {
+        name : '' ,
+        broadcastFormat : {
+            analog : true ,
+            digital : true
+        }
+    }
+
+    : tChannel < 'analog digital' >= {
+        name : '' ,
+        broadcastFormat : {
+            analog : true ,
+            digital : true
+        }
+    }
+
+    : tChannel < 'analog digital' >= {
+        name : '' ,
+        broadcastFormat : {
+            analog : true ,
+            digital : true
+        }
+    }
+
+    : tChannel < 'analog digital' >= {
+        name : '' ,
+        broadcastFormat : {
+            analog : true ,
+            digital : true
+        }
+    }
+
+    : tChannel < 'analog digital' >= {
+        name : '' ,
+        broadcastFormat : {
+            analog : true ,
+            digital : true
+        }
+    }
+
+    : tChannel < 'analog digital' >= {
+        name : '' ,
+        broadcastFormat : {
+            analog : true ,
+            digital : true
+        }
+    }
+
+    : tChannel < 'analog digital' >= {
+        name : '' ,
+        broadcastFormat : {
+            analog : true ,
+            digital : true
+        }
+    }
+
+    : tChannel < 'analog digital' >= {
+        name : '' ,
+        broadcastFormat : {
+            analog : true ,
+            digital : true
+        }
+    }
+
+    : tChannel < 'analog digital' >= {
+        name : '' ,
+        broadcastFormat : {
+            analog : true ,
+            digital : true
+        }
+    }
+
+    : tChannel < 'analog digital' >= {
+        name : '' ,
+        broadcastFormat : {
+            analog : true ,
+            digital : true
+        }
+    }
+
+    : tChannel < 'analog digital' >= {
+        name : '' ,
+        broadcastFormat : {
+            analog : true ,
+            digital : true
+        }
+    }
+
+    : tChannel < 'analog digital' >= {
+        name : '' ,
+        broadcastFormat : {
+            analog : true ,
+            digital : true
+        }
+    }
+
+    : tChannel < 'analog digital' >= {
+        name : '' ,
+        broadcastFormat : {
+            analog : true ,
+            digital : true
+        }
+    }
+
+    : tChannel < 'analog digital' >= {
+        name : '' ,
+        broadcastFormat : {
+            analog : true ,
+            digital : true
+        }
+    }
+
+    : tChannel < 'analog digital' >= {
+        name : '' ,
+        broadcastFormat : {
+            analog : true ,
+            digital : true
+        }
+    }
+
+    : tChannel < 'analog digital' >= {
+        name : '' ,
+        broadcastFormat : {
+            analog : true ,
+            digital : true
+        }
+    }
+
+    : tChannel < 'analog digital' >= {
+        name : '' ,
+        broadcastFormat : {
+            analog : true ,
+            digital : true
+        }
+    }
+
+    : tChannel < 'analog digital' >= {
+        name : '' ,
+        broadcastFormat : {
+            analog : true ,
+            digital : true
+        }
+    }
+
+    : tChannel < 'analog digital' >= {
+        name : '' ,
+        broadcastFormat : {
+            analog : true ,
+            digital : true
+        }
+    }
+
+    : tChannel < 'analog digital' >= {
+        name : '' ,
+        broadcastFormat : {
+            analog : true ,
+            digital : true
+        }
+    }
+
+    : tChannel < 'analog digital' >= {
+        name : '' ,
+        broadcastFormat : {
+            analog : true ,
+            digital : true
+        }
+    }
+
+    : tChannel < 'analog digital' >= {
+        name : '' ,
+        broadcastFormat : {
+            analog : true ,
+            digital : true
+        }
+    }
+
+    : tChannel < 'analog digital' >= {
+        name : '' ,
+        broadcastFormat : {
+            analog : true ,
+            digital : true
+        }
+    }
+
+    : tChannel < 'analog digital' >= {
+        name : '' ,
+        broadcastFormat : {
+            analog : true ,
+            digital : true
+        }
+    }
+
+    : tChannel < 'analog digital' >= {
+        name : '' ,
+        broadcastFormat : {
+            analog : true ,
+            digital : true
+        }
+    }
+
+    : tChannel < 'analog digital' >= {
+        name : '' ,
+        broadcastFormat : {
+            analog : true ,
+            digital : true
+        }
+    }
+
+    : tChannel < 'analog digital' >= {
+        name : '' ,
+        broadcastFormat : {
+            analog : true ,
+            digital : true
+        }
+    }
+
+    : tChannel < 'analog digital' >= {
+        name : '' ,
+        broadcastFormat : {
+            analog : true ,
+            digital : true
+        }
+    }
+
+    : tChannel < 'analog digital' >= {
+        name : '' ,
+        broadcastFormat : {
+            analog : true ,
+            digital : true
+        }
+    }
+
+    : tChannel < 'analog digital' >= {
+        name : '' ,
+        broadcastFormat : {
+            analog : true ,
+            digital : true
+        }
+    }
+
+    : tChannel < 'analog digital' >= {
+        name : '' ,
+        broadcastFormat : {
+            analog : true ,
+            digital : true
+        }
+    }
+
+    : tChannel < 'analog digital' >= {
+        name : '' ,
+        broadcastFormat : {
+            analog : true ,
+            digital : true
+        }
+    }
+
+    : tChannel < 'analog digital' >= {
+        name : '' ,
+        broadcastFormat : {
+            analog : true ,
+            digital : true
+        }
+    }
+
+    : tChannel < 'analog digital' >= {
+        name : '' ,
+        broadcastFormat : {
+            analog : true ,
+            digital : true
+        }
+    }
+
+    : tChannel < 'analog digital' >= {
+        name : '' ,
+        broadcastFormat : {
+            analog : true ,
+            digital : true
+        }
+    }
+
+    : tChannel < 'analog digital' >= {
+        name : '' ,
+        broadcastFormat : {
+            analog : true ,
+            digital : true
+        }
+    }
+
+    : tChannel < 'analog digital' >= {
+        name : '' ,
+        broadcastFormat : {
+            analog : true ,
+            digital : true
+        }
+    }
+
+    : tChannel < 'analog digital' >= {
+        name : '' ,
+        broadcastFormat : {
+            analog : true ,
+            digital : true
+        }
+    }
+
+    : tChannel < 'analog digital' >= {
+        name : '' ,
+        broadcastFormat : {
+            analog : true ,
+            digital : true
+        }
+    }
+
+    : tChannel < 'analog digital' >= {
+        name : '' ,
+        broadcastFormat : {
+            analog : true ,
+            digital : true
+        }
+    }
+
+    : tChannel < 'analog digital' >= {
+        name : '' ,
+        broadcastFormat : {
+            analog : true ,
+            digital : true
+        }
+    }
+
+    : tChannel < 'analog digital' >= {
+        name : '' ,
+        broadcastFormat : {
+            analog : true ,
+            digital : true
+        }
+    }
+
+    : tChannel < 'analog digital' >= {
+        name : '' ,
+        broadcastFormat : {
+            analog : true ,
+            digital : true
+        }
+    }
+
+    : tChannel < 'analog digital' >= {
+        name : '' ,
+        broadcastFormat : {
+            analog : true ,
+            digital : true
+        }
+    }
+
+    : tChannel < 'analog digital' >= {
+        name : '' ,
+        broadcastFormat : {
+            analog : true ,
+            digital : true
+        }
+    }
+
+    : tChannel < 'analog digital' >= {
+        name : '' ,
+        broadcastFormat : {
+            analog : true ,
+            digital : true
+        }
+    }
+
+    : tChannel < 'analog digital' >= {
+        name : '' ,
+        broadcastFormat : {
+            analog : true ,
+            digital : true
+        }
+    }
+
+    : tChannel < 'analog digital' >= {
+        name : '' ,
+        broadcastFormat : {
+            analog : true ,
+            digital : true
+        }
+    }
+
+    : tChannel < 'analog digital' >= {
+        name : '' ,
+        broadcastFormat : {
+            analog : true ,
+            digital : true
+        }
+    }
+
+    : tChannel < 'analog digital' >= {
+        name : '' ,
+        broadcastFormat : {
+            analog : true ,
+            digital : true
+        }
+    }
+
+    : tChannel < 'analog digital' >= {
+        name : '' ,
+        broadcastFormat : {
+            analog : true ,
+            digital : true
+        }
+    }
+
+    : tChannel < 'analog digital' >= {
+        name : '' ,
+        broadcastFormat : {
+            analog : true ,
+            digital : true
+        }
+    }
+
+    : tChannel < 'analog digital' >= {
+        name : '' ,
+        broadcastFormat : {
+            analog : true ,
+            digital : true
+        }
+    }
+
+    : tChannel < 'analog digital' >= {
+        name : '' ,
+        broadcastFormat : {
+            analog : true ,
+            digital : true
+        }
+    }
+
+    : tChannel < 'analog digital' >= {
+        name : '' ,
+        broadcastFormat : {
+            analog : true ,
+            digital : true
+        }
+    }
+
+    : tChannel < 'analog digital' >= {
+        name : '' ,
+        broadcastFormat : {
+            analog : true ,
+            digital : true
+        }
+    }
+
+    : tChannel < 'analog digital' >= {
+        name : '' ,
+        broadcastFormat : {
+            analog : true ,
+            digital : true
+        }
+    }
+
+    : tChannel < 'analog digital' >= {
+        name : '' ,
+        broadcastFormat : {
+            analog : true ,
+            digital : true
+        }
+    }
+
+    : tChannel < 'analog digital' >= {
+        name : '' ,
+        broadcastFormat : {
+            analog : true ,
+            digital : true
+        }
+    }
+
+    : tChannel < 'analog digital' >= {
+        name : '' ,
+        broadcastFormat : {
+            analog : true ,
+            digital : true
+        }
+    }
+
+    : tChannel < 'analog digital' >= {
+        name : '' ,
+        broadcastFormat : {
+            analog : true ,
+            digital : true
+        }
+    }
+
+    : tChannel < 'analog digital' >= {
+        name : '' ,
+        broadcastFormat : {
+            analog : true ,
+            digital : true
+        }
+    }
+
+    : tChannel < 'analog digital' >= {
+        name : '' ,
+        broadcastFormat : {
+            analog : true ,
+            digital : true
+        }
+    }
+
+    : tChannel < 'analog digital' >= {
+        name : '' ,
+        broadcastFormat : {
+            analog : true ,
+            digital : true
+        }
+    }
+
+    : tChannel < 'analog digital' >= {
+        name : '' ,
+        broadcastFormat : {
+            analog : true ,
+            digital : true
+        }
+    }
+
+    : tChannel < 'analog digital' >= {
+        name : '' ,
+        broadcastFormat : {
+            analog : true ,
+            digital : true
+        }
+    }
+
+    : tChannel < 'analog digital' >= {
+        name : '' ,
+        broadcastFormat : {
+            analog : true ,
+            digital : true
+        }
+    }
+
+    : tChannel < 'analog digital' >= {
+        name : '' ,
+        broadcastFormat : {
+            analog : true ,
+            digital : true
+        }
+    }
+
+    : tChannel < 'analog digital' >= {
+        name : '' ,
+        broadcastFormat : {
+            analog : true ,
+            digital : true
+        }
+    }
+
+    : tChannel < 'analog digital' >= {
+        name : '' ,
+        broadcastFormat : {
+            analog : true ,
+            digital : true
+        }
+    }
+
+    : tChannel < 'analog digital' >= {
+        name : '' ,
+        broadcastFormat : {
+            analog : true ,
+            digital : true
+        }
+    }
+
+    : tChannel < 'analog digital' >= {
+        name : '' ,
+        broadcastFormat : {
+            analog : true ,
+            digital : true
+        }
+    }
+
+    : tChannel < 'analog digital' >= {
+        name : '' ,
+        broadcastFormat : {
+            analog : true ,
+            digital : true
+        }
+    }
+
+    : tChannel < 'analog digital' >= {
+        name : '' ,
+        broadcastFormat : {
+            analog : true ,
+            digital : true
+        }
+    }
+
+    : tChannel < 'analog digital' >= {
+        name : '' ,
+        broadcastFormat : {
+            analog : true ,
+            digital : true
+        }
+    }
+
+    : tChannel < 'analog digital' >= {
+        name : '' ,
+        broadcastFormat : {
+            analog : true ,
+            digital : true
+        }
+    }
+
+    : tChannel < 'analog digital' >= {
+        name : '' ,
+        broadcastFormat : {
+            analog : true ,
+            digital : true
+        }
+    }
+
+    : tChannel < 'analog digital' >= {
+        name : '' ,
+        broadcastFormat : {
+            analog : true ,
+            digital : true
+        }
+    }
+
+    : tChannel < 'analog digital' >= {
+        name : '' ,
+        broadcastFormat : {
+            analog : true ,
+            digital : true
+        }
+    }
+
+    : tChannel < 'analog digital' >= {
+        name : '' ,
+        broadcastFormat : {
+            analog : true ,
+            digital : true
+        }
+    }
+
+    : tChannel < 'analog digital' >= {
+        name : '' ,
+        broadcastFormat : {
+            analog : true ,
+            digital : true
+        }
+    }
+
+    : tChannel < 'analog digital' >= {
+        name : '' ,
+        broadcastFormat : {
+            analog : true ,
+            digital : true
+        }
+    }
+
+    : tChannel < 'analog digital' >= {
+        name : '' ,
+        broadcastFormat : {
+            analog : true ,
+            digital : true
+        }
+    }
+
+    : tChannel < 'analog digital' >= {
+        name : '' ,
+        broadcastFormat : {
+            analog : true ,
+            digital : true
+        }
+    }
+
+    : tChannel < 'analog digital' >= {
+        name : '' ,
+        broadcastFormat : {
+            analog : true ,
+            digital : true
+        }
+    }
+
+    : tChannel < 'analog digital' >= {
+        name : '' ,
+        broadcastFormat : {
+            analog : true ,
+            digital : true
+        }
+    }
+
+    : tChannel < 'analog digital' >= {
+        name : '' ,
+        broadcastFormat : {
+            analog : true ,
+            digital : true
+        }
+    }
+
     // NTN = new TVChannels.NTN () ;
     // Zoom = new TVChannels.Zoom () ;
     // Piksel = new TVChannels.Piksel () ;
