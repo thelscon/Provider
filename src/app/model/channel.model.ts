@@ -1,26 +1,27 @@
-export type tChannel < T extends 'analog' | 'digital' | 'analog digital' > =
-    T extends 'analog' ? {
-        name : string ,
-        broadcastFormat : {
-            analog : boolean ,
-            digital ?: boolean
-        }
+interface iChannel {
+    name : string
+}
+interface iChannelAnalog extends iChannel {
+    broadcastFormat : {
+        analog : boolean ,
+        digital ?: boolean
     }
-    : T extends 'digital' ? {
-        name : string ,
-        broadcastFormat : {
-            analog ?: boolean
-            digital : boolean
-        }
+}
+interface iChannelDigital extends iChannel {
+    broadcastFormat : {
+        analog ?: boolean ,
+        digital : boolean
     }
-    : T extends 'analog digital' ? {
-        name : string ,
-        broadcastFormat : {
-            analog : boolean ,
-            digital : boolean
-        }
+}
+interface iChannelAnalogDigital extends iChannel {
+    broadcastFormat : {
+        analog : boolean ,
+        digital : boolean
     }
-    : {
-        name : string ,
-        broadcastFormat : {}
-    } ;
+}
+
+export type tChannel < K extends 'analog' | 'digital' | 'analog digital' > = 
+    K extends 'analog' ? iChannelAnalog
+    : K extends 'digital' ? iChannelDigital
+    : K extends 'analog digital' ? iChannelAnalogDigital
+    : iChannel ;

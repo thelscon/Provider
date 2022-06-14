@@ -1,106 +1,106 @@
-export class Suspilne_Uzhhorod implements iChannel < eFormatType.Digital > {
-    name = 'Суспільне Ужгород' ;
-}
+// export class Suspilne_Uzhhorod implements iChannel < eFormatType.Digital > {
+//     name = 'Суспільне Ужгород' ;
+// }
 
-export class XSPORT implements iChannel < eFormatType.AnalogDigital > {
-    name = 'XSPORT' ;
-}
+// export class XSPORT implements iChannel < eFormatType.AnalogDigital > {
+//     name = 'XSPORT' ;
+// }
 
-export class Avers implements iChannel < eFormatType.Digital > {
-    name = 'Аверс' ;
-}
+// export class Avers implements iChannel < eFormatType.Digital > {
+//     name = 'Аверс' ;
+// }
 
-export class Zakon_TV implements iChannel < eFormatType.Digital > {
-    name = 'Закон ТВ' ;
-}
+// export class Zakon_TV implements iChannel < eFormatType.Digital > {
+//     name = 'Закон ТВ' ;
+// }
 
-export class Chanell_4 implements iChannel < eFormatType.AnalogDigital > {
-    name = 'Chanell 4' ;
-}
+// export class Chanell_4 implements iChannel < eFormatType.AnalogDigital > {
+//     name = 'Chanell 4' ;
+// }
 
-export class Pershyy_dilovyy implements iChannel < eFormatType.Digital > {
-    name = 'Перший діловий' ;
-}
+// export class Pershyy_dilovyy implements iChannel < eFormatType.Digital > {
+//     name = 'Перший діловий' ;
+// }
 
-export class UNC implements iChannel < eFormatType.Digital > {
-    name = 'UNC' ;
-}
+// export class UNC implements iChannel < eFormatType.Digital > {
+//     name = 'UNC' ;
+// }
 
-export class Islandiya implements iChannel < eFormatType.Digital > {
-    name = 'Ісландія' ;
-}
+// export class Islandiya implements iChannel < eFormatType.Digital > {
+//     name = 'Ісландія' ;
+// }
 
-export class Live implements iChannel < eFormatType.AnalogDigital > {
-    name = 'Live' ;
-}
+// export class Live implements iChannel < eFormatType.AnalogDigital > {
+//     name = 'Live' ;
+// }
 
-export class Sontse implements iChannel < eFormatType.AnalogDigital > {
-    name = 'Сонце' ;
-}
+// export class Sontse implements iChannel < eFormatType.AnalogDigital > {
+//     name = 'Сонце' ;
+// }
 
-export class ATR implements iChannel < eFormatType.Digital > {
-    name = 'ATR' ;
-}
+// export class ATR implements iChannel < eFormatType.Digital > {
+//     name = 'ATR' ;
+// }
 
-export class Vosmyy_kanal implements iChannel < eFormatType.Digital > {
-    name = '8 канал' ;
-}
+// export class Vosmyy_kanal implements iChannel < eFormatType.Digital > {
+//     name = '8 канал' ;
+// }
 
-export class Nadiya implements iChannel < eFormatType.Digital > {
-    name = 'Надiя' ;
-}
+// export class Nadiya implements iChannel < eFormatType.Digital > {
+//     name = 'Надiя' ;
+// }
 
-export class Pershyy_avtomobilnyy implements iChannel < eFormatType.AnalogDigital > {
-    name = 'Перший автомобільний' ;
-}
+// export class Pershyy_avtomobilnyy implements iChannel < eFormatType.AnalogDigital > {
+//     name = 'Перший автомобільний' ;
+// }
 
-export class ECO_TV implements iChannel < eFormatType.Digital > {
-    name = 'ECO TV' ;
-}
+// export class ECO_TV implements iChannel < eFormatType.Digital > {
+//     name = 'ECO TV' ;
+// }
 
-export class Dvanadtsyatyy_Kanal implements iChannel < eFormatType.Digital > {
-    name = '12 Канал' ;
-}
+// export class Dvanadtsyatyy_Kanal implements iChannel < eFormatType.Digital > {
+//     name = '12 Канал' ;
+// }
 
-export class CHPINFO implements iChannel < eFormatType.Digital > {
-    name = 'ЧП.INFO' ;
-}
+// export class CHPINFO implements iChannel < eFormatType.Digital > {
+//     name = 'ЧП.INFO' ;
+// }
 
-export class Pershyy_Zakhidnyy implements iChannel < eFormatType.Digital > {
-    name = 'Перший Захiдний' ;
-}
+// export class Pershyy_Zakhidnyy implements iChannel < eFormatType.Digital > {
+//     name = 'Перший Захiдний' ;
+// }
 
-export class Boutique_TV implements iChannel < eFormatType.Digital > {
-    name = 'Boutique TV' ;
-}
+// export class Boutique_TV implements iChannel < eFormatType.Digital > {
+//     name = 'Boutique TV' ;
+// }
 
-export class TV5 implements iChannel < eFormatType.Digital > {
-    name = 'TV-5' ;
-}
+// export class TV5 implements iChannel < eFormatType.Digital > {
+//     name = 'TV-5' ;
+// }
 
-export class BBC_World_News implements iChannel < eFormatType.Digital > {
-    name = 'BBC World News' ;
-}
+// export class BBC_World_News implements iChannel < eFormatType.Digital > {
+//     name = 'BBC World News' ;
+// }
 
-export class Deutsche_Welle implements iChannel < eFormatType.Digital > {
-    name = 'Deutsche Welle' ;
-}
+// export class Deutsche_Welle implements iChannel < eFormatType.Digital > {
+//     name = 'Deutsche Welle' ;
+// }
 
-export class France_24 implements iChannel < eFormatType.Digital > {
-    name = 'France 24' ;
-}
+// export class France_24 implements iChannel < eFormatType.Digital > {
+//     name = 'France 24' ;
+// }
 
-export class Euronews implements iChannel < eFormatType.Digital > {
-    name = 'Euronews' ;
-}
+// export class Euronews implements iChannel < eFormatType.Digital > {
+//     name = 'Euronews' ;
+// }
 
-export class CNN_International implements iChannel < eFormatType.Digital > {
-    name = 'CNN International' ;
-}
+// export class CNN_International implements iChannel < eFormatType.Digital > {
+//     name = 'CNN International' ;
+// }
 
-export class KBS_World implements iChannel < eFormatType.Digital > {
-    name = 'KBS World' ;
-}
+// export class KBS_World implements iChannel < eFormatType.Digital > {
+//     name = 'KBS World' ;
+// }
 
 // export class Nastoyashcheye_vremya implements iChannel < eFormatType.Digital > {
 //     name = 'Настоящее время' ;
