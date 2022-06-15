@@ -1,8 +1,8 @@
 import { tChannel } from "./channel.model";
 
-export class ChannelsData {
+export class ChannelData {
 
-    Inter : tChannel < 'analog digital' > = {
+    static readonly Inter : tChannel < 'analog digital' > = {
         name : 'Інтер' ,
         broadcastFormat : {
             analog : true ,
@@ -10,7 +10,7 @@ export class ChannelsData {
         }
     } ;
 
-    NTN : tChannel < 'analog digital' > = {
+    static readonly NTN : tChannel < 'analog digital' > = {
         name : 'НТН' ,
         broadcastFormat : {
             analog : true ,
@@ -18,14 +18,14 @@ export class ChannelsData {
         }
     }
 
-    Zoom : tChannel < 'digital' > = {
+    static readonly Zoom : tChannel < 'digital' > = {
         name : 'Zoom' ,
         broadcastFormat : {
             digital : true
         }
     }
 
-    Piksel : tChannel < 'analog digital' > = {
+    static readonly Piksel : tChannel < 'analog digital' > = {
         name : 'Піксель' ,
         broadcastFormat : {
             analog : true ,
@@ -33,7 +33,7 @@ export class ChannelsData {
         }
     }
 
-    Enter_film : tChannel < 'analog digital' > = {
+    static readonly Enter_film : tChannel < 'analog digital' > = {
         name : 'Enter-фільм' ,
         broadcastFormat : {
             analog : true ,
@@ -41,7 +41,7 @@ export class ChannelsData {
         }
     }
 
-    Meha : tChannel < 'analog digital' > = {
+    static readonly Meha : tChannel < 'analog digital' > = {
         name : 'Мега' ,
         broadcastFormat : {
             analog : true ,
@@ -49,7 +49,7 @@ export class ChannelsData {
         }
     }
 
-    K1 : tChannel < 'analog digital' > = {
+    static readonly K1 : tChannel < 'analog digital' > = {
         name : 'К1' ,
         broadcastFormat : {
             analog : true ,
@@ -57,28 +57,28 @@ export class ChannelsData {
         }
     }
 
-    K2 : tChannel < 'digital' > = {
+    static readonly K2 : tChannel < 'digital' > = {
         name : 'К2' ,
         broadcastFormat : {
             digital : true
         }
     }
 
-    Bolt : tChannel < 'digital' > = {
+    static readonly Bolt : tChannel < 'digital' > = {
         name : 'Bolt' ,
         broadcastFormat : {
             digital : true
         }
     }
 
-    Kvartal_TV : tChannel < 'digital' > = {
+    static readonly Kvartal_TV : tChannel < 'digital' > = {
         name : 'Квартал TV' ,
         broadcastFormat : {
             digital : true
         }
     }
 
-    TRK_Ukrayina : tChannel < 'analog digital' > = {
+    static readonly TRK_Ukrayina : tChannel < 'analog digital' > = {
         name : 'ТРК Україна' ,
         broadcastFormat : {
             analog : true ,
@@ -86,7 +86,7 @@ export class ChannelsData {
         }
     }
 
-    NLO_TV : tChannel < 'analog digital' > = {
+    static readonly NLO_TV : tChannel < 'analog digital' > = {
         name : 'НЛО TV' ,
         broadcastFormat : {
             analog : true ,
@@ -94,14 +94,14 @@ export class ChannelsData {
         }
     }
 
-    Indyho_TV : tChannel < 'digital' > = {
+    static readonly Indyho_TV : tChannel < 'digital' > = {
         name : 'Індиго TV' ,
         broadcastFormat : {
             digital : true
         }
     }
 
-    Ukrayina_24 : tChannel < 'analog digital' > = {
+    static readonly Ukrayina_24 : tChannel < 'analog digital' > = {
         name : 'Україна 24' ,
         broadcastFormat : {
             analog : true ,
@@ -109,7 +109,7 @@ export class ChannelsData {
         }
     }
 
-    STB : tChannel < 'analog digital' > = {
+    static readonly STB : tChannel < 'analog digital' > = {
         name : 'СТБ' ,
         broadcastFormat : {
             analog : true ,
@@ -117,7 +117,7 @@ export class ChannelsData {
         }
     }
 
-    ICTV : tChannel < 'analog digital' > = {
+    static readonly ICTV : tChannel < 'analog digital' > = {
         name : 'ICTV' ,
         broadcastFormat : {
             analog : true ,
@@ -125,7 +125,7 @@ export class ChannelsData {
         }
     }
 
-    Novyy_kanal : tChannel < 'analog digital' > = {
+    static readonly Novyy_kanal : tChannel < 'analog digital' > = {
         name : 'Новий канал' ,
         broadcastFormat : {
             analog : true ,
@@ -133,14 +133,14 @@ export class ChannelsData {
         }
     }
 
-    M1 : tChannel < 'digital' > = {
+    static readonly M1 : tChannel < 'digital' > = {
         name : 'M1' ,
         broadcastFormat : {
             digital : true
         }
     }
 
-    M2 : tChannel < 'analog digital' > = {
+    static readonly M2 : tChannel < 'analog digital' > = {
         name : 'M2' ,
         broadcastFormat : {
             analog : true ,
@@ -148,7 +148,7 @@ export class ChannelsData {
         }
     }
 
-    OTSE : tChannel < 'analog digital' > = {
+    static readonly OTSE : tChannel < 'analog digital' > = {
         name : 'ОЦЕ' ,
         broadcastFormat : {
             analog : true ,
@@ -156,7 +156,7 @@ export class ChannelsData {
         }
     }
 
-    Odyn_plyus_odyn : tChannel < 'analog digital' > = {
+    static readonly Odyn_plyus_odyn : tChannel < 'analog digital' > = {
         name : '1+1' ,
         broadcastFormat : {
             analog : true ,
@@ -164,7 +164,7 @@ export class ChannelsData {
         }
     }
 
-    Dva_plyus_dva : tChannel < 'analog digital' > = {
+    static readonly Dva_plyus_dva : tChannel < 'analog digital' > = {
         name : '2+2' ,
         broadcastFormat : {
             analog : true ,
@@ -172,7 +172,7 @@ export class ChannelsData {
         }
     }
 
-    TET : tChannel < 'analog digital' > = {
+    static readonly TET : tChannel < 'analog digital' > = {
         name : 'ТЕТ' ,
         broadcastFormat : {
             analog : true ,
@@ -180,14 +180,14 @@ export class ChannelsData {
         }
     }
 
-    FILMUADrama : tChannel < 'digital' > = {
+    static readonly FILMUADrama : tChannel < 'digital' > = {
         name : 'FILMUADrama' ,
         broadcastFormat : {
             digital : true
         }
     }
 
-    Paramount_Comedy : tChannel < 'analog digital' > = {
+    static readonly Paramount_Comedy : tChannel < 'analog digital' > = {
         name : 'Paramount Comedy' ,
         broadcastFormat : {
             analog : true ,
@@ -195,7 +195,7 @@ export class ChannelsData {
         }
     }
 
-    UNIAN : tChannel < 'analog digital' > = {
+    static readonly UNIAN : tChannel < 'analog digital' > = {
         name : 'УНІАН' ,
         broadcastFormat : {
             analog : true ,
@@ -203,7 +203,7 @@ export class ChannelsData {
         }
     }
 
-    PlusPlus : tChannel < 'analog digital' > = {
+    static readonly PlusPlus : tChannel < 'analog digital' > = {
         name : 'ПлюсПлюс' ,
         broadcastFormat : {
             analog : true ,
@@ -211,7 +211,7 @@ export class ChannelsData {
         }
     }
 
-    Bihudi : tChannel < 'analog digital' > = {
+    static readonly Bihudi : tChannel < 'analog digital' > = {
         name : 'Бігуді' ,
         broadcastFormat : {
             analog : true ,
@@ -219,7 +219,7 @@ export class ChannelsData {
         }
     }
 
-    Somyy_kanal : tChannel < 'analog digital' > = {
+    static readonly Somyy_kanal : tChannel < 'analog digital' > = {
         name : '7 канал' ,
         broadcastFormat : {
             analog : true ,
@@ -227,7 +227,7 @@ export class ChannelsData {
         }
     }
 
-    Dumskaya_TV : tChannel < 'analog digital' > = {
+    static readonly Dumskaya_TV : tChannel < 'analog digital' > = {
         name : 'Думская.TV' ,
         broadcastFormat : {
             analog : true ,
@@ -235,7 +235,7 @@ export class ChannelsData {
         }
     }
 
-    Pervyy_gorodskoy : tChannel < 'analog digital' > = {
+    static readonly Pervyy_gorodskoy : tChannel < 'analog digital' > = {
         name : 'Первый городской' ,
         broadcastFormat : {
             analog : true ,
@@ -243,7 +243,7 @@ export class ChannelsData {
         }
     }
 
-    Tretiy_tsifrovoy : tChannel < 'analog digital' > = {
+    static readonly Tretiy_tsifrovoy : tChannel < 'analog digital' > = {
         name : 'Третий цифровой' ,
         broadcastFormat : {
             analog : true ,
@@ -251,7 +251,7 @@ export class ChannelsData {
         }
     }
 
-    Media_Inform : tChannel < 'analog digital' > = {
+    static readonly Media_Inform : tChannel < 'analog digital' > = {
         name : 'Медиа Информ' ,
         broadcastFormat : {
             analog : true ,
@@ -259,21 +259,21 @@ export class ChannelsData {
         }
     }
 
-    Tsentralnyy : tChannel < 'digital' > = {
+    static readonly Tsentralnyy : tChannel < 'digital' > = {
         name : 'Центральный' ,
         broadcastFormat : {
             digital : true
         }
     }
 
-    Zoryanyy : tChannel < 'digital' > = {
+    static readonly Zoryanyy : tChannel < 'digital' > = {
         name : 'Зоряний' ,
         broadcastFormat : {
             digital : true
         }
     }
 
-    Odesa_live : tChannel < 'analog digital' > = {
+    static readonly Odesa_live : tChannel < 'analog digital' > = {
         name : 'Odesa.live' ,
         broadcastFormat : {
             analog : true ,
@@ -281,14 +281,14 @@ export class ChannelsData {
         }
     }
 
-    Apostrof_TV : tChannel < 'digital' > = {
+    static readonly Apostrof_TV : tChannel < 'digital' > = {
         name : 'Апостроф TV' ,
         broadcastFormat : {
             digital : true
         }
     }
 
-    Kruh : tChannel < 'analog digital' > = {
+    static readonly Kruh : tChannel < 'analog digital' > = {
         name : 'Круг' ,
         broadcastFormat : {
             analog : true ,
@@ -296,7 +296,7 @@ export class ChannelsData {
         }
     }
 
-    Reporter : tChannel < 'analog digital' > = {
+    static readonly Reporter : tChannel < 'analog digital' > = {
         name : 'Репортер' ,
         broadcastFormat : {
             analog : true ,
@@ -304,14 +304,14 @@ export class ChannelsData {
         }
     }
 
-    Moya_Odessa : tChannel < 'digital' > = {
+    static readonly Moya_Odessa : tChannel < 'digital' > = {
         name : 'Моя Одесса' ,
         broadcastFormat : {
             digital : true
         }
     }
 
-    PLUS : tChannel < 'analog digital' > = {
+    static readonly PLUS : tChannel < 'analog digital' > = {
         name : 'PLUS' ,
         broadcastFormat : {
             analog : true ,
@@ -319,7 +319,7 @@ export class ChannelsData {
         }
     }
 
-    Hlas : tChannel < 'analog digital' > = {
+    static readonly Hlas : tChannel < 'analog digital' > = {
         name : 'Глас' ,
         broadcastFormat : {
             analog : true ,
@@ -327,7 +327,7 @@ export class ChannelsData {
         }
     }
 
-    Hrad : tChannel < 'analog digital' > = {
+    static readonly Hrad : tChannel < 'analog digital' > = {
         name : 'Град' ,
         broadcastFormat : {
             analog : true ,
@@ -335,7 +335,7 @@ export class ChannelsData {
         }
     }
 
-    IT3 : tChannel < 'analog digital' > = {
+    static readonly IT3 : tChannel < 'analog digital' > = {
         name : 'ИТ3' ,
         broadcastFormat : {
             analog : true ,
@@ -343,14 +343,14 @@ export class ChannelsData {
         }
     }
 
-    Odessa_Fashion : tChannel < 'digital' > = {
+    static readonly Odessa_Fashion : tChannel < 'digital' > = {
         name : 'Odessa Fashion' ,
         broadcastFormat : {
             digital : true
         }
     }
 
-    UA_ODESA : tChannel < 'analog digital' > = {
+    static readonly UA_ODESA : tChannel < 'analog digital' > = {
         name : 'UA: ODESA' ,
         broadcastFormat : {
             analog : true ,
@@ -358,28 +358,28 @@ export class ChannelsData {
         }
     }
 
-    TIS_TV : tChannel < 'digital' > = {
+    static readonly TIS_TV : tChannel < 'digital' > = {
         name : 'ТІС-ТВ' ,
         broadcastFormat : {
             digital : true
         }
     }
 
-    Music_Box_Ukraine : tChannel < 'digital' > = {
+    static readonly Music_Box_Ukraine : tChannel < 'digital' > = {
         name : 'Music Box Ukraine' ,
         broadcastFormat : {
             digital : true
         }
     }
 
-    Pyatyy_kanal : tChannel < 'digital' > = {
+    static readonly Pyatyy_kanal : tChannel < 'digital' > = {
         name : '5 канал' ,
         broadcastFormat : {
             digital : true
         }
     }
 
-    Shist_sotok : tChannel < 'analog digital' > = {
+    static readonly Shist_sotok : tChannel < 'analog digital' > = {
         name : '6 соток' ,
         broadcastFormat : {
             analog : true ,
@@ -387,7 +387,7 @@ export class ChannelsData {
         }
     }
 
-    Rada : tChannel < 'analog digital' > = {
+    static readonly Rada : tChannel < 'analog digital' > = {
         name : 'Рада' ,
         broadcastFormat : {
             analog : true ,
@@ -395,7 +395,7 @@ export class ChannelsData {
         }
     }
 
-    Trofey : tChannel < 'analog digital' > = {
+    static readonly Trofey : tChannel < 'analog digital' > = {
         name : 'Трофей' ,
         broadcastFormat : {
             analog : true ,
@@ -403,14 +403,14 @@ export class ChannelsData {
         }
     }
 
-    Fourever_Music : tChannel < 'digital' > = {
+    static readonly Fourever_Music : tChannel < 'digital' > = {
         name : '4ever Music' ,
         broadcastFormat : {
             digital : true
         }
     }
 
-    Epokha : tChannel < 'analog digital' > = {
+    static readonly Epokha : tChannel < 'analog digital' > = {
         name : 'Єпоха' ,
         broadcastFormat : {
             analog : true ,
@@ -418,7 +418,7 @@ export class ChannelsData {
         }
     }
 
-    Terra : tChannel < 'analog digital' > = {
+    static readonly Terra : tChannel < 'analog digital' > = {
         name : 'Терра' ,
         broadcastFormat : {
             analog : true ,
@@ -426,7 +426,7 @@ export class ChannelsData {
         }
     }
 
-    Dacha : tChannel < 'analog digital' > = {
+    static readonly Dacha : tChannel < 'analog digital' > = {
         name : 'Дача' ,
         broadcastFormat : {
             analog : true ,
@@ -434,7 +434,7 @@ export class ChannelsData {
         }
     }
 
-    Fauna : tChannel < 'analog digital' > = {
+    static readonly Fauna : tChannel < 'analog digital' > = {
         name : 'Фауна' ,
         broadcastFormat : {
             analog : true ,
@@ -442,7 +442,7 @@ export class ChannelsData {
         }
     }
 
-    Nauka : tChannel < 'analog digital' > = {
+    static readonly Nauka : tChannel < 'analog digital' > = {
         name : 'Наука' ,
         broadcastFormat : {
             analog : true ,
@@ -450,35 +450,35 @@ export class ChannelsData {
         }
     }
 
-    Kyyiv : tChannel < 'digital' > = {
+    static readonly Kyyiv : tChannel < 'digital' > = {
         name : 'Київ' ,
         broadcastFormat : {
             digital : true
         }
     }
 
-    Obozrevatel_TV : tChannel < 'digital' > = {
+    static readonly Obozrevatel_TV : tChannel < 'digital' > = {
         name : 'Obozrevatel TV' ,
         broadcastFormat : {
             digital : true
         }
     }
 
-    PravdaTUT : tChannel < 'digital' > = {
+    static readonly PravdaTUT : tChannel < 'digital' > = {
         name : 'ПравдаТУТ' ,
         broadcastFormat : {
             digital : true
         }
     }
 
-    Chornomorska_teleradiokompaniya : tChannel < 'digital' > = {
+    static readonly Chornomorska_teleradiokompaniya : tChannel < 'digital' > = {
         name : 'Чорноморська телерадіокомпанія' ,
         broadcastFormat : {
             digital : true
         }
     }
 
-    Suspilne_Krym : tChannel < 'analog digital' > = {
+    static readonly Suspilne_Krym : tChannel < 'analog digital' > = {
         name : 'Суспільне Крим' ,
         broadcastFormat : {
             analog : true ,
@@ -486,7 +486,7 @@ export class ChannelsData {
         }
     }
 
-    Genuine_TV : tChannel < 'analog digital' > = {
+    static readonly Genuine_TV : tChannel < 'analog digital' > = {
         name : 'Genuine TV' ,
         broadcastFormat : {
             analog : true ,
@@ -494,14 +494,14 @@ export class ChannelsData {
         }
     }
 
-    KRTK : tChannel < 'digital' > = {
+    static readonly KRTK : tChannel < 'digital' > = {
         name : 'KRT-K' ,
         broadcastFormat : {
             digital : true
         }
     }
 
-    Pryamyy : tChannel < 'analog digital' > = {
+    static readonly Pryamyy : tChannel < 'analog digital' > = {
         name : 'Прямий' ,
         broadcastFormat : {
             analog : true ,
@@ -509,21 +509,21 @@ export class ChannelsData {
         }
     }
 
-    Extreme_Sports : tChannel < 'digital' > = {
+    static readonly Extreme_Sports : tChannel < 'digital' > = {
         name : 'Extreme Sports' ,
         broadcastFormat : {
             digital : true
         }
     }
 
-    UATV : tChannel < 'digital' > = {
+    static readonly UATV : tChannel < 'digital' > = {
         name : 'UATV' ,
         broadcastFormat : {
             digital : true
         }
     }
 
-    Pershyy : tChannel < 'analog digital' > = {
+    static readonly Pershyy : tChannel < 'analog digital' > = {
         name : 'Перший' ,
         broadcastFormat : {
             analog : true ,
@@ -531,28 +531,28 @@ export class ChannelsData {
         }
     }
 
-    Televsesvit : tChannel < 'digital' > = {
+    static readonly Televsesvit : tChannel < 'digital' > = {
         name : 'Телевсесвіт' ,
         broadcastFormat : {
             digital : true
         }
     }
 
-    HD_Fashion : tChannel < 'digital' > = {
+    static readonly HD_Fashion : tChannel < 'digital' > = {
         name : 'HD Fashion' ,
         broadcastFormat : {
             digital : true
         }
     }
 
-    TVIQ : tChannel < 'digital' > = {
+    static readonly TVIQ : tChannel < 'digital' > = {
         name : 'TVIQ' ,
         broadcastFormat : {
             digital : true
         }
     }
 
-    Natali : tChannel < 'analog digital' > = {
+    static readonly Natali : tChannel < 'analog digital' > = {
         name : 'Наталі' ,
         broadcastFormat : {
             analog : true ,
@@ -560,7 +560,7 @@ export class ChannelsData {
         }
     }
 
-    Suspilne_Kultura : tChannel < 'analog digital' > = {
+    static readonly Suspilne_Kultura : tChannel < 'analog digital' > = {
         name : 'Суспільне Культура' ,
         broadcastFormat : {
             analog : true ,
@@ -568,21 +568,21 @@ export class ChannelsData {
         }
     }
 
-    Svarozhichi : tChannel < 'digital' > = {
+    static readonly Svarozhichi : tChannel < 'digital' > = {
         name : 'Сварожичи' ,
         broadcastFormat : {
             digital : true
         }
     }
 
-    Halychyna : tChannel < 'digital' > = {
+    static readonly Halychyna : tChannel < 'digital' > = {
         name : 'Галичина' ,
         broadcastFormat : {
             digital : true
         }
     }
 
-    Espreso_TV : tChannel < 'analog digital' > = {
+    static readonly Espreso_TV : tChannel < 'analog digital' > = {
         name : 'Еспресо TV' ,
         broadcastFormat : {
             analog : true ,
@@ -590,7 +590,7 @@ export class ChannelsData {
         }
     }
 
-    Milady_Television : tChannel < 'analog digital' > = {
+    static readonly Milady_Television : tChannel < 'analog digital' > = {
         name : 'Milady Television' ,
         broadcastFormat : {
             analog : true ,
@@ -598,14 +598,14 @@ export class ChannelsData {
         }
     }
 
-    Sonata : tChannel < 'digital' > = {
+    static readonly Sonata : tChannel < 'digital' > = {
         name : 'Соната' ,
         broadcastFormat : {
             digital : true
         }
     }
 
-    News_24 : tChannel < 'analog digital' > = {
+    static readonly News_24 : tChannel < 'analog digital' > = {
         name : 'News 24' ,
         broadcastFormat : {
             analog : true ,
@@ -613,7 +613,7 @@ export class ChannelsData {
         }
     }
 
-    Karavan_TV : tChannel < 'analog digital' > = {
+    static readonly Karavan_TV : tChannel < 'analog digital' > = {
         name : 'Караван TV' ,
         broadcastFormat : {
             analog : true ,
@@ -621,7 +621,7 @@ export class ChannelsData {
         }
     }
 
-    Discovery : tChannel < 'analog digital' > = {
+    static readonly Discovery : tChannel < 'analog digital' > = {
         name : 'Discovery' ,
         broadcastFormat : {
             analog : true ,
@@ -629,7 +629,7 @@ export class ChannelsData {
         }
     }
 
-    Animal_Planet : tChannel < 'analog digital' > = {
+    static readonly Animal_Planet : tChannel < 'analog digital' > = {
         name : 'Animal Planet' ,
         broadcastFormat : {
             analog : true ,
@@ -637,7 +637,7 @@ export class ChannelsData {
         }
     }
 
-    Eurosport_Odin : tChannel < 'analog digital' > = {
+    static readonly Eurosport_1 : tChannel < 'analog digital' > = {
         name : 'Eurosport 1' ,
         broadcastFormat : {
             analog : true ,
@@ -645,7 +645,7 @@ export class ChannelsData {
         }
     }
 
-    TLC : tChannel < 'analog digital' > = {
+    static readonly TLC : tChannel < 'analog digital' > = {
         name : 'TLC' ,
         broadcastFormat : {
             analog : true ,
@@ -653,14 +653,14 @@ export class ChannelsData {
         }
     }
 
-    Suspilne_Uzhhorod : tChannel < 'digital' > = {
+    static readonly Suspilne_Uzhhorod : tChannel < 'digital' > = {
         name : 'Суспільне Ужгород' ,
         broadcastFormat : {
             digital : true
         }
     }
 
-    XSPORT : tChannel < 'analog digital' > = {
+    static readonly XSPORT : tChannel < 'analog digital' > = {
         name : 'XSPORT' ,
         broadcastFormat : {
             analog : true ,
@@ -668,21 +668,21 @@ export class ChannelsData {
         }
     }
 
-    Avers : tChannel < 'digital' > = {
+    static readonly Avers : tChannel < 'digital' > = {
         name : 'Аверс' ,
         broadcastFormat : {
             digital : true
         }
     }
 
-    Zakon_TV : tChannel < 'digital' > = {
+    static readonly Zakon_TV : tChannel < 'digital' > = {
         name : 'Закон ТВ' ,
         broadcastFormat : {
             digital : true
         }
     }
 
-    Chanell_4 : tChannel < 'analog digital' > = {
+    static readonly Chanell_4 : tChannel < 'analog digital' > = {
         name : 'Chanell 4' ,
         broadcastFormat : {
             analog : true ,
@@ -690,28 +690,28 @@ export class ChannelsData {
         }
     }
 
-    Pershyy_dilovyy : tChannel < 'digital' > = {
+    static readonly Pershyy_dilovyy : tChannel < 'digital' > = {
         name : 'Перший діловий' ,
         broadcastFormat : {
             digital : true
         }
     }
 
-    UNC : tChannel < 'digital' > = {
+    static readonly UNC : tChannel < 'digital' > = {
         name : 'UNC' ,
         broadcastFormat : {
             digital : true
         }
     }
 
-    Islandiya : tChannel < 'digital' > = {
+    static readonly Islandiya : tChannel < 'digital' > = {
         name : 'Ісландія' ,
         broadcastFormat : {
             digital : true
         }
     }
 
-    Live : tChannel < 'analog digital' > = {
+    static readonly Live : tChannel < 'analog digital' > = {
         name : 'Live' ,
         broadcastFormat : {
             analog : true ,
@@ -719,7 +719,7 @@ export class ChannelsData {
         }
     }
 
-    Sontse : tChannel < 'analog digital' > = {
+    static readonly Sontse : tChannel < 'analog digital' > = {
         name : 'Сонце' ,
         broadcastFormat : {
             analog : true ,
@@ -727,28 +727,28 @@ export class ChannelsData {
         }
     }
 
-    ATR : tChannel < 'digital' > = {
+    static readonly ATR : tChannel < 'digital' > = {
         name : 'ATR' ,
         broadcastFormat : {
             digital : true
         }
     }
 
-    Vosmyy_kanal : tChannel < 'digital' > = {
+    static readonly Vosmyy_kanal : tChannel < 'digital' > = {
         name : '8 канал' ,
         broadcastFormat : {
             digital : true
         }
     }
 
-    Nadiya : tChannel < 'digital' > = {
+    static readonly Nadiya : tChannel < 'digital' > = {
         name : 'Надiя' ,
         broadcastFormat : {
             digital : true
         }
     }
 
-    Pershyy_avtomobilnyy : tChannel < 'analog digital' > = {
+    static readonly Pershyy_avtomobilnyy : tChannel < 'analog digital' > = {
         name : 'Перший автомобільний' ,
         broadcastFormat : {
             analog : true ,
@@ -756,7 +756,7 @@ export class ChannelsData {
         }
     }
 
-    ECO_TV : tChannel < 'analog digital' > = {
+    static readonly ECO_TV : tChannel < 'analog digital' > = {
         name : 'ECO TV' ,
         broadcastFormat : {
             analog : true ,
@@ -764,168 +764,168 @@ export class ChannelsData {
         }
     }
 
-    Dvanadtsyatyy_Kanal : tChannel < 'digital' > = {
+    static readonly Dvanadtsyatyy_Kanal : tChannel < 'digital' > = {
         name : '12 Канал' ,
         broadcastFormat : {
             digital : true
         }
     }
 
-    CHPINFO : tChannel < 'digital' > = {
+    static readonly CHPINFO : tChannel < 'digital' > = {
         name : 'ЧП.INFO' ,
         broadcastFormat : {
             digital : true
         }
     }
 
-    Pershyy_Zakhidnyy : tChannel < 'digital' > = {
+    static readonly Pershyy_Zakhidnyy : tChannel < 'digital' > = {
         name : 'Перший Захiдний' ,
         broadcastFormat : {
             digital : true
         }
     }
 
-    Boutique_TV : tChannel < 'digital' > = {
+    static readonly Boutique_TV : tChannel < 'digital' > = {
         name : 'Boutique TV' ,
         broadcastFormat : {
             digital : true
         }
     }
 
-    TV5 : tChannel < 'digital' > = {
+    static readonly TV5 : tChannel < 'digital' > = {
         name : 'TV-5' ,
         broadcastFormat : {
             digital : true
         }
     }
 
-    BBC_World_News : tChannel < 'digital' > = {
+    static readonly BBC_World_News : tChannel < 'digital' > = {
         name : 'BBC World News' ,
         broadcastFormat : {
             digital : true
         }
     }
 
-    Deutsche_Welle : tChannel < 'digital' > = {
+    static readonly Deutsche_Welle : tChannel < 'digital' > = {
         name : 'Deutsche Welle' ,
         broadcastFormat : {
             digital : true
         }
     }
 
-    France_24 : tChannel < 'digital' > = {
+    static readonly France_24 : tChannel < 'digital' > = {
         name : 'France 24' ,
         broadcastFormat : {
             digital : true
         }
     }
 
-    Euronews : tChannel < 'digital' > = {
+    static readonly Euronews : tChannel < 'digital' > = {
         name : 'Euronews' ,
         broadcastFormat : {
             digital : true
         }
     }
 
-    CNN_International : tChannel < 'digital' > = {
+    static readonly CNN_International : tChannel < 'digital' > = {
         name : 'CNN International' ,
         broadcastFormat : {
             digital : true
         }
     }
 
-    KBS_World : tChannel < 'digital' > = {
+    static readonly KBS_World : tChannel < 'digital' > = {
         name : 'KBS World' ,
         broadcastFormat : {
             digital : true
         }
     }
 
-    Nastoyashcheye_vremya : tChannel < 'digital' > = {
+    static readonly Nastoyashcheye_vremya : tChannel < 'digital' > = {
         name : 'Настоящее время' ,
         broadcastFormat : {
             digital : true
         }
     }
 
-    CNL_Ukrayina : tChannel < 'digital' > = {
+    static readonly CNL_Ukrayina : tChannel < 'digital' > = {
         name : 'CNL Україна' ,
         broadcastFormat : {
             digital : true
         }
     }
 
-    OstWest : tChannel < 'digital' > = {
+    static readonly OstWest : tChannel < 'digital' > = {
         name : 'OstWest' ,
         broadcastFormat : {
             digital : true
         }
     }
 
-    This_is_Bulgaria : tChannel < 'digital' > = {
+    static readonly This_is_Bulgaria : tChannel < 'digital' > = {
         name : 'This is Bulgaria' ,
         broadcastFormat : {
             digital : true
         }
     }
 
-    Travel_TV : tChannel < 'digital' > = {
+    static readonly Travel_TV : tChannel < 'digital' > = {
         name : 'Travel TV' ,
         broadcastFormat : {
             digital : true
         }
     }
 
-    Deluxe_Lounge : tChannel < 'digital' > = {
+    static readonly Deluxe_Lounge : tChannel < 'digital' > = {
         name : 'Deluxe Lounge' ,
         broadcastFormat : {
             digital : true
         }
     }
 
-    Wness_TV : tChannel < 'digital' > = {
+    static readonly Wness_TV : tChannel < 'digital' > = {
         name : 'Wness TV' ,
         broadcastFormat : {
             digital : true
         }
     }
 
-    Deluxe_Music : tChannel < 'digital' > = {
+    static readonly Deluxe_Music : tChannel < 'digital' > = {
         name : 'Deluxe Music' ,
         broadcastFormat : {
             digital : true
         }
     }
 
-    Rock_TV : tChannel < 'digital' > = {
+    static readonly Rock_TV : tChannel < 'digital' > = {
         name : 'Rock TV' ,
         broadcastFormat : {
             digital : true
         }
     }
 
-    Jukebox : tChannel < 'digital' > = {
+    static readonly Jukebox : tChannel < 'digital' > = {
         name : 'Jukebox' ,
         broadcastFormat : {
             digital : true
         }
     }
 
-    Mason_TV : tChannel < 'digital' > = {
+    static readonly Mason_TV : tChannel < 'digital' > = {
         name : 'Масон ТВ' ,
         broadcastFormat : {
             digital : true
         }
     }
 
-    TravelAdventure : tChannel < 'digital' > = {
+    static readonly TravelAdventure : tChannel < 'digital' > = {
         name : 'Travel&Adventure' ,
         broadcastFormat : {
             digital : true
         }
     }
 
-    Kino_1 : tChannel < 'analog digital' > = {
+    static readonly Kino_1 : tChannel < 'analog digital' > = {
         name : 'Кино 1' ,
         broadcastFormat : {
             analog : true ,
@@ -933,7 +933,7 @@ export class ChannelsData {
         }
     }
 
-    History_HD : tChannel < 'analog digital' > = {
+    static readonly History_HD : tChannel < 'analog digital' > = {
         name : 'History HD' ,
         broadcastFormat : {
             analog : true ,
@@ -941,7 +941,7 @@ export class ChannelsData {
         }
     }
 
-    Travel_HD : tChannel < 'analog digital' > = {
+    static readonly Travel_HD : tChannel < 'analog digital' > = {
         name : 'Travel HD' ,
         broadcastFormat : {
             analog : true ,
@@ -949,35 +949,35 @@ export class ChannelsData {
         }
     }
 
-    Viasat_History : tChannel < 'digital' > = {
+    static readonly Viasat_History : tChannel < 'digital' > = {
         name : 'Viasat History' ,
         broadcastFormat : {
             digital : true
         }
     }
 
-    Viasat_Explorer : tChannel < 'digital' > = {
+    static readonly Viasat_Explorer : tChannel < 'digital' > = {
         name : 'Viasat Explorer' ,
         broadcastFormat : {
             digital : true
         }
     }
 
-    Viasat_Nature : tChannel < 'digital' > = {
+    static readonly Viasat_Nature : tChannel < 'digital' > = {
         name : 'Viasat Nature' ,
         broadcastFormat : {
             digital : true
         }
     }
 
-    Black : tChannel < 'digital' > = {
+    static readonly Black : tChannel < 'digital' > = {
         name : 'Black' ,
         broadcastFormat : {
             digital : true
         }
     }
 
-    EU_Music : tChannel < 'analog digital' > = {
+    static readonly EU_Music : tChannel < 'analog digital' > = {
         name : 'EU Music' ,
         broadcastFormat : {
             analog : true ,
@@ -985,35 +985,35 @@ export class ChannelsData {
         }
     }
 
-    DuckTV : tChannel < 'digital' > = {
+    static readonly DuckTV : tChannel < 'digital' > = {
         name : 'DuckTV+' ,
         broadcastFormat : {
             digital : true
         }
     }
 
-    Duck_TV: tChannel < 'digital' > = {
+    static readonly Duck_TV: tChannel < 'digital' > = {
         name : 'Duck TV' ,
         broadcastFormat : {
             digital : true
         }
     }
 
-    TiJi : tChannel < 'digital' > = {
+    static readonly TiJi : tChannel < 'digital' > = {
         name : 'TiJi' ,
         broadcastFormat : {
             digital : true
         }
     }
 
-    Boomerang : tChannel < 'digital' > = {
+    static readonly Boomerang : tChannel < 'digital' > = {
         name : 'Boomerang' ,
         broadcastFormat : {
             digital : true
         }
     }
 
-    FlixSnip : tChannel < 'analog digital' > = {
+    static readonly FlixSnip : tChannel < 'analog digital' > = {
         name : 'Flix&Snip' ,
         broadcastFormat : {
             analog : true ,
@@ -1021,14 +1021,14 @@ export class ChannelsData {
         }
     }
 
-    Malyatko_TV : tChannel < 'digital' > = {
+    static readonly Malyatko_TV : tChannel < 'digital' > = {
         name : 'Малятко TV' ,
         broadcastFormat : {
             digital : true
         }
     }
 
-    Cartoon_Network : tChannel < 'analog digital' > = {
+    static readonly Cartoon_Network : tChannel < 'analog digital' > = {
         name : 'Cartoon Network' ,
         broadcastFormat : {
             analog : true ,
@@ -1036,21 +1036,21 @@ export class ChannelsData {
         }
     }
 
-    Lale : tChannel < 'digital' > = {
+    static readonly Lale : tChannel < 'digital' > = {
         name : 'Lâle' ,
         broadcastFormat : {
             digital : true
         }
     }
 
-    Mezzo : tChannel < 'digital' > = {
+    static readonly Mezzo : tChannel < 'digital' > = {
         name : 'Mezzo' ,
         broadcastFormat : {
             digital : true
         }
     }
 
-    NIKI_Kids : tChannel < 'analog digital' > = {
+    static readonly NIKI_Kids : tChannel < 'analog digital' > = {
         name : 'NIKI Kids' ,
         broadcastFormat : {
             analog : true ,
@@ -1058,7 +1058,7 @@ export class ChannelsData {
         }
     }
 
-    NIKI_Junior : tChannel < 'analog digital' > = {
+    static readonly NIKI_Junior : tChannel < 'analog digital' > = {
         name : 'NIKI Junior' ,
         broadcastFormat : {
             analog : true ,
@@ -1066,28 +1066,28 @@ export class ChannelsData {
         }
     }
 
-    Suspilne_Donbas : tChannel < 'digital' > = {
+    static readonly Suspilne_Donbas : tChannel < 'digital' > = {
         name : 'Суспільне Донбас' ,
         broadcastFormat : {
             digital : true
         }
     }
 
-    Sport1 : tChannel < 'digital' > = {
+    static readonly Sport1 : tChannel < 'digital' > = {
         name : 'Sport1' ,
         broadcastFormat : {
             digital : true
         }
     }
 
-    Sport2 : tChannel < 'digital' > = {
+    static readonly Sport2 : tChannel < 'digital' > = {
         name : 'Sport2' ,
         broadcastFormat : {
             digital : true
         }
     }
 
-    Setanta_Sports : tChannel < 'analog digital' > = {
+    static readonly Setanta_Sports : tChannel < 'analog digital' > = {
         name : 'Setanta Sports' ,
         broadcastFormat : {
             analog : true ,
@@ -1095,42 +1095,42 @@ export class ChannelsData {
         }
     }
 
-    Viasat_Sport : tChannel < 'digital' > = {
+    static readonly Viasat_Sport : tChannel < 'digital' > = {
         name : 'Viasat Sport' ,
         broadcastFormat : {
             digital : true
         }
     }
 
-    Sport1_Baltic : tChannel < 'digital' > = {
+    static readonly Sport1_Baltic : tChannel < 'digital' > = {
         name : 'Sport1 Baltic' ,
         broadcastFormat : {
             digital : true
         }
     }
 
-    Sport2_Baltic : tChannel < 'digital' > = {
+    static readonly Sport2_Baltic : tChannel < 'digital' > = {
         name : 'Sport2 Baltic' ,
         broadcastFormat : {
             digital : true
         }
     }
 
-    Sport1_HD : tChannel < 'digital' > = {
+    static readonly Sport1_HD : tChannel < 'digital' > = {
         name : 'Sport1 HD' ,
         broadcastFormat : {
             digital : true
         }
     }
 
-    FastFun_Box : tChannel < 'digital' > = {
+    static readonly FastFun_Box : tChannel < 'digital' > = {
         name : 'Fast&Fun Box' ,
         broadcastFormat : {
             digital : true
         }
     }
 
-    DocuBox : tChannel < 'analog digital' > = {
+    static readonly DocuBox : tChannel < 'analog digital' > = {
         name : 'DocuBox' ,
         broadcastFormat : {
             analog : true ,
@@ -1138,14 +1138,14 @@ export class ChannelsData {
         }
     }
 
-    Trace_Sport_HD : tChannel < 'digital' > = {
+    static readonly Trace_Sport_HD : tChannel < 'digital' > = {
         name : 'Trace Sport HD' ,
         broadcastFormat : {
             digital : true
         }
     }
 
-    FilmBox_ArtHouse : tChannel < 'analog digital' > = {
+    static readonly FilmBox_ArtHouse : tChannel < 'analog digital' > = {
         name : 'FilmBox ArtHouse' ,
         broadcastFormat : {
             analog : true ,
@@ -1153,7 +1153,7 @@ export class ChannelsData {
         }
     }
 
-    FilmBox : tChannel < 'analog digital' > = {
+    static readonly FilmBox : tChannel < 'analog digital' > = {
         name : 'FilmBox' ,
         broadcastFormat : {
             analog : true ,
@@ -1161,14 +1161,14 @@ export class ChannelsData {
         }
     }
 
-    FashionBox : tChannel < 'digital' > = {
+    static readonly FashionBox : tChannel < 'digital' > = {
         name : 'FashionBox' ,
         broadcastFormat : {
             digital : true
         }
     }
 
-    TuneBox : tChannel < 'analog digital' > = {
+    static readonly TuneBox : tChannel < 'analog digital' > = {
         name : '360TuneBox' ,
         broadcastFormat : {
             analog : true ,
@@ -1176,21 +1176,21 @@ export class ChannelsData {
         }
     }
 
-    FightBox : tChannel < 'digital' > = {
+    static readonly FightBox : tChannel < 'digital' > = {
         name : 'FightBox' ,
         broadcastFormat : {
             digital : true
         }
     }
 
-    Nautical_Channel : tChannel < 'digital' > = {
+    static readonly Nautical_Channel : tChannel < 'digital' > = {
         name : 'Nautical Channel' ,
         broadcastFormat : {
             digital : true
         }
     }
 
-    SEA_TV : tChannel < 'analog digital' > = {
+    static readonly SEA_TV : tChannel < 'analog digital' > = {
         name : 'SEA TV ' ,
         broadcastFormat : {
             analog : true ,
@@ -1198,42 +1198,42 @@ export class ChannelsData {
         }
     }
 
-    VIP_Premiere : tChannel < 'digital' > = {
+    static readonly VIP_Premiere : tChannel < 'digital' > = {
         name : 'VIP Premiere' ,
         broadcastFormat : {
             digital : true
         }
     }
 
-    VIP_Megahit : tChannel < 'digital' > = {
+    static readonly VIP_Megahit : tChannel < 'digital' > = {
         name : 'VIP Megahit' ,
         broadcastFormat : {
             digital : true
         }
     }
 
-    VIP_Comedy : tChannel < 'digital' > = {
+    static readonly VIP_Comedy : tChannel < 'digital' > = {
         name : 'VIP Comedy' ,
         broadcastFormat : {
             digital : true
         }
     }
 
-    TV1000_East : tChannel < 'digital' > = {
+    static readonly TV1000_East : tChannel < 'digital' > = {
         name : 'TV1000 East' ,
         broadcastFormat : {
             digital : true
         }
     }
 
-    TV1000_Action_East : tChannel < 'digital' > = {
+    static readonly TV1000_Action_East : tChannel < 'digital' > = {
         name : 'TV1000 Action East' ,
         broadcastFormat : {
             digital : true
         }
     }
 
-    TV1000_World_Kino : tChannel < 'analog digital' > = {
+    static readonly TV1000_World_Kino : tChannel < 'analog digital' > = {
         name : 'TV1000 World Kino' ,
         broadcastFormat : {
             analog : true ,
@@ -1241,28 +1241,28 @@ export class ChannelsData {
         }
     }
 
-    TV1 : tChannel < 'digital' > = {
+    static readonly TV1 : tChannel < 'digital' > = {
         name : 'ТВ-1' ,
         broadcastFormat : {
             digital : true
         }
     }
 
-    Epic_Drama : tChannel < 'digital' > = {
+    static readonly Epic_Drama : tChannel < 'digital' > = {
         name : 'Epic Drama' ,
         broadcastFormat : {
             digital : true
         }
     }
 
-    Trace_Urban : tChannel < 'digital' > = {
+    static readonly Trace_Urban : tChannel < 'digital' > = {
         name : 'Trace Urban' ,
         broadcastFormat : {
             digital : true
         }
     }
 
-    Four_Ever_Cinema : tChannel < 'analog digital' > = {
+    static readonly Ever_Cinema : tChannel < 'analog digital' > = {
         name : 'Four Ever Cinema' ,
         broadcastFormat : {
             analog : true ,
@@ -1270,14 +1270,14 @@ export class ChannelsData {
         }
     }
 
-    Dorama : tChannel < 'digital' > = {
+    static readonly Dorama : tChannel < 'digital' > = {
         name : 'Дорама' ,
         broadcastFormat : {
             digital : true
         }
     }
 
-    AMC : tChannel < 'analog digital' > = {
+    static readonly AMC : tChannel < 'analog digital' > = {
         name : 'AMC' ,
         broadcastFormat : {
             analog : true ,
@@ -1285,224 +1285,46 @@ export class ChannelsData {
         }
     }
 
-    KinoKazka: tChannel < 'digital' > = {
+    static readonly KinoKazka: tChannel < 'digital' > = {
         name : 'КіноКазка' ,
         broadcastFormat : {
             digital : true
         }
     }
 
-    Bollywood : tChannel < 'digital' > = {
+    static readonly Bollywood : tChannel < 'digital' > = {
         name : 'Bollywood' ,
         broadcastFormat : {
             digital : true
         }
     }
 
-    QuizTV : tChannel < 'digital' > = {
+    static readonly QuizTV : tChannel < 'digital' > = {
         name : 'Quiz TV' ,
         broadcastFormat : {
             digital : true
         }
     }
 
-    Ukrainian_Fashion_TV : tChannel < 'digital' > = {
+    static readonly Ukrainian_Fashion_TV : tChannel < 'digital' > = {
         name : 'Ukrainian Fashion TV' ,
         broadcastFormat : {
             digital : true
         }
     }
 
-    ReserveA : tChannel < 'analog' > = {
+    static readonly ReserveA : tChannel < 'analog' > = {
         name : 'Резерв, аналогове мовлення' ,
         broadcastFormat : {
             analog : true
         }
     }
 
-    ReserveG : tChannel < 'digital' > = {
+    static readonly ReserveG : tChannel < 'digital' > = {
         name : 'Резерв, аналогове і цифрове мовлення' ,
         broadcastFormat : {
             digital : true
         }
     }
-
-    // NTN = new TVChannels.NTN () ;
-    // Zoom = new TVChannels.Zoom () ;
-    // Piksel = new TVChannels.Piksel () ;
-    // Enter_film = new TVChannels.Enter_film () ;
-    // Meha = new TVChannels.Meha () ;
-    // K1 = new TVChannels.K1 () ;
-    // K2 = new TVChannels.K2 () ;
-    // Bolt = new TVChannels.Bolt () ;
-    // Kvartal_TV = new TVChannels.Kvartal_TV () ;
-    // TRK_Ukrayina = new TVChannels.TRK_Ukrayina () ;
-    // NLO_TV = new TVChannels.NLO_TV () ;
-    // Indyho_TV = new TVChannels.Indyho_TV () ;
-    // Ukrayina_24 = new TVChannels.Ukrayina_24 () ;
-    // STB = new TVChannels.STB () ;
-    // ICTV = new TVChannels.ICTV () ;
-    // Novyy_kanal = new TVChannels.Novyy_kanal () ;
-    // М1 = new TVChannels.М1 () ;
-    // M2 = new Channel < cBroadcastFormatAnalogDigital > ( 'М2' ) ;
-    // OTSE = new TVChannels.OTSE () ;
-    // Odyn_plyus_odyn = new TVChannels.Odyn_plyus_odyn () ;
-    // Dva_plyus_dva = new TVChannels.Dva_plyus_dva () ;
-    // TET = new TVChannels.TET () ;
-    // FILMUADrama = new TVChannels.FILMUADrama () ;
-    // Paramount_Comedy = new TVChannels.Paramount_Comedy () ;
-    // UNIAN = new TVChannels.UNIAN () ;
-    // PlusPlus = new TVChannels.PlusPlus () ;
-    // Bihudi = new TVChannels.Bihudi () ;
-    // Somyy_kanal = new TVChannels.Somyy_kanal () ;
-    // Dumskaya_TV = new TVChannels.Dumskaya_TV () ;
-    // Pervyy_gorodskoy = new TVChannels.Pervyy_gorodskoy () ;
-    // Tretiy_tsifrovoy = new TVChannels.Tretiy_tsifrovoy () ;
-    // Media_Inform = new TVChannels.Media_Inform () ;
-    // Tsentralnyy = new TVChannels.Tsentralnyy () ;
-    // Zoryanyy = new TVChannels.Zoryanyy () ;
-    // Odesa_live = new TVChannels.Odesa_live () ;
-    // Apostrof_TV = new TVChannels.Apostrof_TV () ;
-    // Kruh = new TVChannels.Kruh () ;
-    // Reporter = new TVChannels.Reporter () ;
-    // Moya_Odessa = new TVChannels.Moya_Odessa () ;
-    // PLUS = new TVChannels.PLUS () ;
-    // Hlas = new TVChannels.Hlas () ;
-    // Hrad = new TVChannels.Hrad () ;
-    // IT3 = new TVChannels.IT3 () ;
-    // Odessa_Fashion = new TVChannels.Odessa_Fashion () ;
-    // UA_ODESA = new TVChannels.UA_ODESA () ;
-    // TIS_TV = new TVChannels.TIS_TV () ;
-    // Music_Box_Ukraine = new TVChannels.Music_Box_Ukraine () ;
-    // Pyatyy_kanal = new TVChannels.Pyatyy_kanal () ;
-    // Shist_sotok = new TVChannels.Shist_sotok () ;
-    // Rada = new TVChannels.Rada () ;
-    // Trofey = new TVChannels.Trofey () ;
-    // Fourever_Music = new TVChannels.Fourever_Music () ;
-    // Epokha = new TVChannels.Epokha () ;
-    // Terra = new TVChannels.Terra () ;
-    // Dacha = new TVChannels.Dacha () ; 
-    // Fauna = new TVChannels.Fauna () ;
-    // Nauka = new TVChannels.Nauka () ;
-    // Kyyiv = new TVChannels.Kyyiv () ;
-    // Obozrevatel_TV = new TVChannels.Obozrevatel_TV () ;
-    // PravdaTUT = new TVChannels.PravdaTUT () ;
-    // Chornomorska_teleradiokompaniya = new TVChannels.Chornomorska_teleradiokompaniya () ;
-    // Suspilne_Krym = new TVChannels.Suspilne_Krym () ;
-    // Genuine_TV = new TVChannels.Genuine_TV () ;
-    // KRTK = new TVChannels.KRTK () ;
-    // Pryamyy = new TVChannels.Pryamyy () ;
-    // Extreme_Sports = new TVChannels.Extreme_Sports () ; 
-    // UATV = new TVChannels.UATV () ;
-    // Televsesvit = new TVChannels.Televsesvit () ;
-    // HD_Fashion = new TVChannels.HD_Fashion () ;
-    // Pershyy = new TVChannels.Pershyy () ;
-    // TVIQ = new TVChannels.TVIQ () ;
-    // Natali = new TVChannels.Natali () ;
-    // Suspilne_Kultura = new TVChannels.Suspilne_Kultura () ;
-    // Svarozhichi = new TVChannels.Svarozhichi () ;
-    // Halychyna = new TVChannels.Halychyna () ;
-    // Espreso_TV = new TVChannels.Espreso_TV () ;
-    // Milady_Television = new TVChannels.Milady_Television () ;
-    // Sonata = new TVChannels.Sonata () ; 
-    // News_24 = new TVChannels.News_24 () ;
-    // Karavan_TV = new TVChannels.Karavan_TV () ;
-    // Discovery = new TVChannels.Discovery () ;
-    // Animal_Planet = new TVChannels.Animal_Planet () ;
-    // Eurosport_Odin = new TVChannels.Eurosport_Odin () ;
-    // TLC = new TVChannels.TLC () ;
-    // Suspilne_Uzhhorod = new TVChannels.Suspilne_Uzhhorod () ;
-    // XSPORT = new TVChannels.XSPORT () ;
-    // Avers = new TVChannels.Avers () ;
-    // Zakon_TV = new TVChannels.Zakon_TV () ;
-    // Chanell_4 = new TVChannels.Chanell_4 () ; 
-    // Pershyy_dilovyy = new TVChannels.Pershyy_dilovyy () ;
-    // UNC = new TVChannels.UNC () ;
-    // Islandiya = new TVChannels.Islandiya () ;
-    // Live = new TVChannels.Live () ;
-    // Sontse = new TVChannels.Sontse () ;
-    // ATR = new TVChannels.ATR () ;
-    // Vosmyy_kanal = new TVChannels.Vosmyy_kanal () ;
-    // Nadiya = new TVChannels.Nadiya () ;
-    // Pershyy_avtomobilnyy = new TVChannels.Pershyy_avtomobilnyy () ;
-    // ECO_TV = new TVChannels.ECO_TV () ;
-    // Dvanadtsyatyy_Kanal = new TVChannels.Dvanadtsyatyy_Kanal () ; 
-    // CHPINFO = new TVChannels.CHPINFO () ;
-    // Pershyy_Zakhidnyy = new TVChannels.Pershyy_Zakhidnyy () ;
-    // Boutique_TV = new TVChannels.Boutique_TV () ;
-    // TV5 = new TVChannels.TV5 () ;
-    // BBC_World_News = new TVChannels.BBC_World_News () ;
-    // Deutsche_Welle = new TVChannels.Deutsche_Welle () ;
-    // France_24 = new TVChannels.France_24 () ;
-    // Euronews = new TVChannels.Euronews () ;
-    // CNN_International = new TVChannels.CNN_International () ;
-    // KBS_World = new TVChannels.KBS_World () ;
-    // Nastoyashcheye_vremya = new TVChannels.Nastoyashcheye_vremya () ; 
-    // CNL_Ukrayina = new TVChannels.CNL_Ukrayina () ;
-    // OstWest = new TVChannels.OstWest () ;
-    // This_is_Bulgaria = new TVChannels.This_is_Bulgaria () ;
-    // Travel_TV = new TVChannels.Travel_TV () ;
-    // Deluxe_Lounge = new TVChannels.Deluxe_Lounge () ;
-    // Wness_TV = new TVChannels.Wness_TV () ;
-    // Deluxe_Music = new TVChannels.Deluxe_Music () ;
-    // Rock_TV = new TVChannels.Rock_TV () ;
-    // Jukebox = new TVChannels.Jukebox () ;
-    // Mason_TV = new TVChannels.Mason_TV () ;
-    // TravelAdventure = new TVChannels.TravelAdventure () ; 
-    // Kino_1 = new TVChannels.Kino_1 () ;
-    // History_HD = new TVChannels.History_HD () ;
-    // Travel_HD = new TVChannels.Travel_HD () ;
-    // Viasat_History = new TVChannels.Viasat_History () ;
-    // Viasat_Explorer = new TVChannels.Viasat_Explorer () ;
-    // Viasat_Nature = new TVChannels.Viasat_Nature () ;
-    // Black = new TVChannels.Black () ;
-    // EU_Music = new TVChannels.EU_Music () ;
-    // DuckTV = new TVChannels.DuckTV () ;
-    // Duck_TV = new TVChannels.Duck_TV () ;
-    // TiJi = new TVChannels.TiJi () ; 
-    // Boomerang = new TVChannels.Boomerang () ;
-    // FlixSnip = new TVChannels.FlixSnip () ;
-    // Malyatko_TV = new TVChannels.Malyatko_TV () ;
-    // Cartoon_Network = new TVChannels.Cartoon_Network () ;
-    // Lale = new TVChannels.Lale () ;
-    // Mezzo = new TVChannels.Mezzo () ;
-    // NIKI_Kids = new TVChannels.NIKI_Kids () ;
-    // NIKI_Junior = new TVChannels.NIKI_Junior () ;
-    // Suspilne_Donbas = new TVChannels.Suspilne_Donbas () ;
-    // Sport1 = new TVChannels.Sport1 () ;
-    // Sport2 = new TVChannels.Sport2 () ; 
-    // Setanta_Sports = new TVChannels.Setanta_Sports () ;
-    // Viasat_Sport = new TVChannels.Viasat_Sport () ;
-    // Sport1_Baltic = new TVChannels.Sport1_Baltic () ;
-    // Sport2_Baltic = new TVChannels.Sport2_Baltic () ;
-    // Sport1_HD = new TVChannels.Sport1_HD () ;
-    // FastFun_Box = new TVChannels.FastFun_Box () ;
-    // DocuBox = new TVChannels.DocuBox () ;
-    // Trace_Sport_HD = new TVChannels.Trace_Sport_HD () ;
-    // FilmBox_ArtHouse = new TVChannels.FilmBox_ArtHouse () ;
-    // FilmBox = new TVChannels.FilmBox () ;
-    // FashionBox = new TVChannels.FashionBox () ;
-    // TuneBox = new TVChannels.TuneBox () ; 
-    // FightBox = new TVChannels.FightBox () ; 
-    // Nautical_Channel = new TVChannels.Nautical_Channel () ; 
-    // SEA_TV = new TVChannels.SEA_TV () ; 
-    // VIP_Premiere = new TVChannels.VIP_Premiere () ; 
-    // VIP_Megahit = new TVChannels.VIP_Megahit () ; 
-    // VIP_Comedy = new TVChannels.VIP_Comedy () ; 
-    // TV1000_East = new TVChannels.TV1000_East () ; 
-    // TV1000_Action_East = new TVChannels.TV1000_Action_East () ; 
-    // TV1000_World_Kino = new TVChannels.TV1000_World_Kino () ; 
-    // TV1 = new TVChannels.TV1 () ; 
-    // Epic_Drama = new TVChannels.Epic_Drama () ; 
-    // Trace_Urban = new TVChannels.Trace_Urban () ; 
-    // Four_Ever_Cinema = new TVChannels.Four_Ever_Cinema () ; 
-    // Dorama = new TVChannels.Dorama () ; 
-    // AMC = new TVChannels.AMC () ; 
-    // KinoKazka = new TVChannels.KinoKazka () ; 
-    // Bollywood = new TVChannels.Bollywood () ; 
-    // QuizTV = new TVChannels.QuizTV () ;
-    // Ukrainian_Fashion_TV = new TVChannels.Ukrainian_Fashion_TV () ;
-    // ReserveA = new TVChannels.ReserveA () ;
-    // ReserveAG = new TVChannels.ReserveAG () ;
     
 }
