@@ -4,6 +4,6 @@ import { ChannelsRepository } from "./channels.repository";
 import { Tmp } from "./channels.repository";
 
 @NgModule ({
-    // providers : [ Tmp ]
+    providers : [ Tmp ]
 })
 export class ModelModule {}
