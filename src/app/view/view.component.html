@@ -1,1 +1,8 @@
-<p>test</p>
+<header>
+    <h6>{{tstname.name}}</h6>
+    <h6>Все каналы</h6>
+    <h6 *ngFor="let tariff of tariffs">{{tariff.name}}</h6>
+</header>
+<div>
+    <p *ngFor="let channel of channels">{{channel.name}}</p>
+</div>

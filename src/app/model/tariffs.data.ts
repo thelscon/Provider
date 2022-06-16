@@ -3,11 +3,16 @@ import { Injectable } from "@angular/core";
 import { tChannel } from "./channel.model";
 import { ChannelData } from "./channels.data";
 
-@Injectable ()
-export class SotsialnyyTariff {
+export interface iTariff {
+    name : string ,
+    analogChannels : tChannel < 'analog' > [] ,
+    digitalChannels : tChannel < 'digital' > []
+}
 
-    static readonly ratiffName = 'Социальный';
-    static readonly analogChannels: tChannel<'analog'>[] = [
+class SotsialnyyTariff implements iTariff {
+
+    readonly name = 'Социальный';
+    readonly analogChannels: tChannel<'analog'>[] = [
         ChannelData.M2,
         ChannelData.NTN,
         ChannelData.IT3,
@@ -48,7 +53,7 @@ export class SotsialnyyTariff {
         ChannelData.Hlas,
         ChannelData.Hrad
     ];
-    static readonly digitalChannels: tChannel<'digital'>[] = [
+    readonly digitalChannels: tChannel<'digital'>[] = [
         ChannelData.Inter,
         ChannelData.NTN,
         ChannelData.Zoom,
@@ -89,10 +94,10 @@ export class SotsialnyyTariff {
 
 }
 
-export class BazovyyTariff {
+class BazovyyTariff implements iTariff {
 
-    static readonly ratiffName = 'Базовый';
-    static readonly analogChannels: tChannel<'analog'>[] = [
+    readonly name = 'Базовый';
+    readonly analogChannels: tChannel<'analog'>[] = [
         ChannelData.M2,
         ChannelData.NTN,
         ChannelData.IT3,
@@ -172,7 +177,7 @@ export class BazovyyTariff {
         ChannelData.Cartoon_Network,
         ChannelData.Kino_1
     ];
-    static readonly digitalChannels: tChannel<'digital'>[] = [
+    readonly digitalChannels: tChannel<'digital'>[] = [
         ChannelData.Inter,
         ChannelData.NTN,
         ChannelData.Zoom,
@@ -358,4 +363,11 @@ export class BazovyyTariff {
         ChannelData.QuizTV,
         ChannelData.Ukrainian_Fashion_TV
     ]
+}
+
+// @Injectable ()
+export class TariffsData {
+    static get tariffs () : iTariff [] {
+        return [ new SotsialnyyTariff () , new BazovyyTariff () ] ;
+    } ;
 }

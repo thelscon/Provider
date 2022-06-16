@@ -1,10 +1,10 @@
 import { Injectable } from "@angular/core";
-import { Observable , from } from "rxjs";
+import { from } from "rxjs";
 
 import { iChannel } from "./channel.model";
 import { tChannel } from "./channel.model";
 
-@Injectable ()
+// @Injectable ()
 export class ChannelData {
 
     static readonly Inter: tChannel<'analog digital'> = {
