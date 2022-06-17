@@ -1,15 +1,10 @@
 import { Injectable } from "@angular/core";
 
-import { tChannel } from "./channel.model";
+import { iChannel, tChannel , iChannelAnalog } from "./channel.model";
+import { aTariff } from "./tariff.model";
 import { ChannelData } from "./channels.data";
 
-export interface iTariff {
-    name : string ,
-    analogChannels : tChannel < 'analog' > [] ,
-    digitalChannels : tChannel < 'digital' > []
-}
-
-class SotsialnyyTariff implements iTariff {
+class SotsialnyyTariff extends aTariff {
 
     readonly name = 'Социальный';
     readonly analogChannels: tChannel<'analog'>[] = [
@@ -91,10 +86,9 @@ class SotsialnyyTariff implements iTariff {
         ChannelData.ReserveG,
         ChannelData.Tretiy_tsifrovoy
     ];
-
 }
 
-class BazovyyTariff implements iTariff {
+class BazovyyTariff extends aTariff {
 
     readonly name = 'Базовый';
     readonly analogChannels: tChannel<'analog'>[] = [
@@ -367,7 +361,7 @@ class BazovyyTariff implements iTariff {
 
 // @Injectable ()
 export class TariffsData {
-    static get tariffs () : iTariff [] {
+    static get tariffs () : aTariff [] {
         return [ new SotsialnyyTariff () , new BazovyyTariff () ] ;
     } ;
 }

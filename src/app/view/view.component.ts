@@ -2,7 +2,8 @@ import { Component } from "@angular/core";
 
 
 import { iChannel } from "../model/channel.model";
-import { iTariff } from "../model/tariff.model";
+import { tTariffsName } from "../model/tariff.model";
+import { aTariff } from "../model/tariff.model";
 import { ChannelsRepository } from "../model/channels.repository";
 import { Tmp } from "../model/channels.repository";
 
@@ -14,14 +15,14 @@ import { Tmp } from "../model/channels.repository";
 export class ViewComponent {
 
     constructor (
-        public tstname : Tmp
+        // public tstname : Tmp
     ) {}
 
     get channels () : iChannel [] {
         return ChannelsRepository.channels ;
     }
 
-    get tariffs () : iTariff [] {
+    get tariffs () : aTariff [] {
         return ChannelsRepository.tariffs ;
     }
 

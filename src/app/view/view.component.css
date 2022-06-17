@@ -1,0 +1,43 @@
+.header {
+    padding: 10px;
+    display: grid;
+    align-content: start;
+}
+
+.channels {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    display: grid;
+    justify-content: center;
+    padding: 5px;
+    border: 1px solid gray;
+}
+
+.cursor {
+    cursor: pointer;
+}
+
+.cursor:hover {
+    background-color: whitesmoke;
+}
+
+.channels-wrap {
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.channel-select {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    display: grid;
+    justify-self: start;
+}
+
+.channel-item {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    display: grid;
+    justify-self: end;
+    grid-auto-flow: column;
+}

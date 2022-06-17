@@ -1,8 +1,24 @@
-<header>
-    <h6>{{tstname.name}}</h6>
-    <h6>Все каналы</h6>
-    <h6 *ngFor="let tariff of tariffs">{{tariff.name}}</h6>
+<header class="header">
+    <h6 class="border cursor">
+            Все каналы ({{channels.length}})
+    </h6>
+    <h6 
+        class="border cursor" 
+        *ngFor="let tariff of tariffs">
+            {{tariff.name}}({{tariff.allChannels.length}})
+    </h6>
 </header>
-<div>
-    <p *ngFor="let channel of channels">{{channel.name}}</p>
+<div class="channels-wrap">
+    <p class="channels" *ngFor="let channel of channels">{{channel.name}}</p>
+    <select 
+        class="channel-select">
+        <option value="10">10 каналов</option>
+        <option value="20">20 каналов</option>
+        <option value="30">30 каналов</option>
+        <option value="50">50 каналов</option>
+    </select>
+    <div class="channel-item">
+        <button
+            class="channel-item">1</button>
+    </div>
 </div>

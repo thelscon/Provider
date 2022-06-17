@@ -4,10 +4,11 @@ import { FormsModule } from "@angular/forms";
 
 import { ModelModule } from "../model/model.module";
 import { ViewComponent } from "./view.component";
+import { CounterDirective } from "./counter.directive";
 
 @NgModule ({
     imports : [ ModelModule , BrowserModule , FormsModule ] ,
-    declarations : [ ViewComponent ] ,
+    declarations : [ ViewComponent , CounterDirective ] ,
     exports : [ ViewComponent ]
 })
 export class ViewModule {}

@@ -7,7 +7,7 @@ export interface iChannel {
         digital?: boolean
     }
 }
-interface iChannelAnalog extends iChannel {
+export interface iChannelAnalog extends iChannel {
     broadcastFormat: {
         analog: boolean,
         digital?: boolean
