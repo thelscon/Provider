@@ -14,6 +14,10 @@ import { Tmp } from "../model/channels.repository";
 })
 export class ViewComponent {
 
+    private _activeTariff : tTariffsName | undefined | null;
+    
+    currentChannels : iChannel [] = this.channels ;
+
     constructor (
         // public tstname : Tmp
     ) {}
@@ -24,6 +28,21 @@ export class ViewComponent {
 
     get tariffs () : aTariff [] {
         return ChannelsRepository.tariffs ;
+    }
+
+    chooseATarif ( value ?: aTariff ) {
+        if ( value ) {
+            if ( this._activeTariff !== value.name ) {
+                this._activeTariff = value.name ;
+                this.currentChannels = value.allChannels
+            }
+        }
+        else {
+            if ( this._activeTariff ) {
+                this._activeTariff = null ;
+                this.currentChannels = this.channels ;
+            }
+        }
     }
 
 }

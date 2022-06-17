@@ -1,15 +1,17 @@
 <header class="header">
-    <h6 class="border cursor">
+    <h6 class="border cursor"
+        (click)="chooseATarif ()">
             Все каналы ({{channels.length}})
     </h6>
     <h6 
         class="border cursor" 
-        *ngFor="let tariff of tariffs">
+        *ngFor="let tariff of tariffs"
+        (click)="chooseATarif ( tariff )">
             {{tariff.name}}({{tariff.allChannels.length}})
     </h6>
 </header>
 <div class="channels-wrap">
-    <p class="channels" *ngFor="let channel of channels">{{channel.name}}</p>
+    <p class="channels" *ngFor="let channel of currentChannels">{{channel.name}}</p>
     <select 
         class="channel-select">
         <option value="10">10 каналов</option>
