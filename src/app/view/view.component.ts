@@ -15,12 +15,39 @@ import { Tmp } from "../model/channels.repository";
 export class ViewComponent {
 
     private _activeTariff : tTariffsName | undefined | null;
-    
-    currentChannels : iChannel [] = this.channels ;
+    private _currentChannels : iChannel [] = this.channels ;
+    private _currentPageList : number = 1 ;
+
+    // currentChannels : iChannel [] = this.channels ;
+    numberOfChannels : number = 20 ;
 
     constructor (
         // public tstname : Tmp
     ) {}
+
+    get currentPageList() : number {
+        return this._currentPageList ;
+    }
+    set currentPageList( value : number ) {
+        this._currentPageList = value ;
+    }
+
+    get currentChannels () : iChannel [] {
+        let start = ( this.currentPageList - 1 ) * this.numberOfChannels ;
+        return this._currentChannels.slice ( start , start + this.numberOfChannels )
+    }
+    set currentChannels( value: iChannel [] ) {
+        this._currentChannels = value ;
+    }
+
+    chooseNumberOfChannels( value : string ): void {
+        this.currentPageList = 1 ;
+        this.numberOfChannels = Number ( value ) ;
+    }
+
+    get pageListNumber () : number {
+        return Math.ceil( this._currentChannels.length / this.numberOfChannels ) ;
+    }
 
     get channels () : iChannel [] {
         return ChannelsRepository.channels ;
@@ -31,6 +58,7 @@ export class ViewComponent {
     }
 
     chooseATarif ( value ?: aTariff ) {
+        this.currentPageList = 1 ;
         if ( value ) {
             if ( this._activeTariff !== value.name ) {
                 this._activeTariff = value.name ;
@@ -43,6 +71,10 @@ export class ViewComponent {
                 this.currentChannels = this.channels ;
             }
         }
+    }
+
+    choiseCurrentPageList ( value : string ) : void {
+        this.currentPageList = Number ( value )
     }
 
 }

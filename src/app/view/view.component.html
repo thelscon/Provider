@@ -13,14 +13,19 @@
 <div class="channels-wrap">
     <p class="channels" *ngFor="let channel of currentChannels">{{channel.name}}</p>
     <select 
-        class="channel-select">
+        class="channel-select"
+        [value]="numberOfChannels"
+        (change)="chooseNumberOfChannels( $any($event.target).value )">
         <option value="10">10 каналов</option>
         <option value="20">20 каналов</option>
         <option value="30">30 каналов</option>
         <option value="50">50 каналов</option>
     </select>
-    <div class="channel-item">
+    <div class="channel-items">
         <button
-            class="channel-item">1</button>
+            class="channel-item"
+            *counter="let item of pageListNumber"
+            (click)="choiseCurrentPageList(item)"
+            [class.active]="item == currentPageList">{{item}}</button>
     </div>
 </div>
