@@ -5,7 +5,6 @@ import { iChannel } from "../model/channel.model";
 import { tTariffsName } from "../model/tariff.model";
 import { aTariff } from "../model/tariff.model";
 import { ChannelsRepository } from "../model/channels.repository";
-import { Tmp } from "../model/channels.repository";
 
 @Component ({
     selector : 'section' ,
@@ -18,11 +17,9 @@ export class ViewComponent {
     private _currentChannels : iChannel [] = this.channels ;
     private _currentPageList : number = 1 ;
 
-    // currentChannels : iChannel [] = this.channels ;
     numberOfChannels : number = 20 ;
 
     constructor (
-        // public tstname : Tmp
     ) {}
 
     get currentPageList() : number {
